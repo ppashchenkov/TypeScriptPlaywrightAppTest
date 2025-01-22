@@ -81,5 +81,3 @@ jobs:
         name: monocart-report
         path: reports/monocart-report/
         retention-days: 30
-
-        
