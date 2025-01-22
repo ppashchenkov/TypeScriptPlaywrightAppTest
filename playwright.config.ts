@@ -32,13 +32,13 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['list'],
-    ['json', {  outputFile: 'report/json-report/report.json' }],
+    ['json', {  outputFile: 'reports/json-report/report.json' }],
     ['html', { outputFolder: 'reports/html-report/', open: 'never' }],
-    ['junit', { outputFile: 'report/junit-report/report.xml' }],
+    ['junit', { outputFile: 'reports/junit-report/report.xml' }],
     ['@estruyf/github-actions-reporter'],
     ['monocart-reporter', {
       name: "My Test Report",
-      outputFile: './monocart-report/index.html'
+      outputFile: 'reports/monocart-report/index.html'
     }]
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
