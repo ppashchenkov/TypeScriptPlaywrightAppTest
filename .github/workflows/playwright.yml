@@ -10,7 +10,7 @@ jobs:
   test:
     name: 'Run Tests'
     timeout-minutes: 60
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Clone Code
@@ -39,7 +39,7 @@ jobs:
       id: cache-playwright-browsers
       uses: actions/cache@v4
       with:
-        path: ~/.cache/2/ms-playwright/
+        path: ~/.cache/ms-playwright/
         key: playwright-browsers-${{ env.PLAYWRIGHT_VERSION }}
 
     - name: Install Playwright Browsers
