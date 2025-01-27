@@ -17,4 +17,3 @@ node_modules/
 /playwright/.cache/
 /tests-examples/
 /.github/workflows/playwright.yml
-/allure-results/
