@@ -1,0 +1,32 @@
+<testsuites id="" name="" tests="9" failures="0" skipped="0" errors="0" time="12.254685">
+<testsuite name="navigationUi.spec.ts" timestamp="2025-01-27T10:13:29.626Z" hostname="chromium" tests="2" failures="0" skipped="0" time="2.549" errors="0">
+<testcase name="Navigation tab are available › Test Case 1: Verify Add tab should be available" classname="navigationUi.spec.ts" time="1.276">
+</testcase>
+<testcase name="Navigation tab are available › Test Case 1: Verify Search tab should be available" classname="navigationUi.spec.ts" time="1.273">
+</testcase>
+</testsuite>
+<testsuite name="test.spec.ts" timestamp="2025-01-27T10:13:29.626Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.999" errors="0">
+<testcase name="test 1" classname="test.spec.ts" time="0.999">
+</testcase>
+</testsuite>
+<testsuite name="navigationUi.spec.ts" timestamp="2025-01-27T10:13:29.626Z" hostname="firefox" tests="2" failures="0" skipped="0" time="4.221" errors="0">
+<testcase name="Navigation tab are available › Test Case 1: Verify Add tab should be available" classname="navigationUi.spec.ts" time="2.18">
+</testcase>
+<testcase name="Navigation tab are available › Test Case 1: Verify Search tab should be available" classname="navigationUi.spec.ts" time="2.041">
+</testcase>
+</testsuite>
+<testsuite name="test.spec.ts" timestamp="2025-01-27T10:13:29.626Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.223" errors="0">
+<testcase name="test 1" classname="test.spec.ts" time="1.223">
+</testcase>
+</testsuite>
+<testsuite name="navigationUi.spec.ts" timestamp="2025-01-27T10:13:29.626Z" hostname="webkit" tests="2" failures="0" skipped="0" time="5.194" errors="0">
+<testcase name="Navigation tab are available › Test Case 1: Verify Add tab should be available" classname="navigationUi.spec.ts" time="2.561">
+</testcase>
+<testcase name="Navigation tab are available › Test Case 1: Verify Search tab should be available" classname="navigationUi.spec.ts" time="2.633">
+</testcase>
+</testsuite>
+<testsuite name="test.spec.ts" timestamp="2025-01-27T10:13:29.626Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.279" errors="0">
+<testcase name="test 1" classname="test.spec.ts" time="2.279">
+</testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,456 @@
+{
+  "config": {
+    "configFile": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/playwright.config.ts",
+    "rootDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/json-report/report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/html-report/",
+          "open": "never"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "reports/junit-report/report.xml"
+        }
+      ],
+      [
+        "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/node_modules/@estruyf/github-actions-reporter/dist/index.js",
+        null
+      ],
+      [
+        "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/node_modules/monocart-reporter/lib/index.js",
+        {
+          "name": "My Test Report",
+          "outputFile": "reports/monocart-report/index.html"
+        }
+      ],
+      [
+        "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/node_modules/allure-playwright/dist/cjs/index.js",
+        {
+          "resultsDir": "allure-results",
+          "detail": true,
+          "suiteTitle": true,
+          "categories": [
+            {
+              "name": "Reports",
+              "messageRegex": "bar",
+              "traceRegex": "baz"
+            }
+          ],
+          "environmentInfo": {
+            "os_platform": "linux",
+            "os_release": "6.8.0-51-generic",
+            "os_version": "#52~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Dec  9 15:00:52 UTC 2",
+            "node_version": "v22.13.0",
+            "process_platform": "linux"
+          },
+          "storeTrends": true
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.50.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "navigationUi.spec.ts",
+      "file": "navigationUi.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Navigation tab are available",
+          "file": "navigationUi.spec.ts",
+          "line": 7,
+          "column": 10,
+          "specs": [
+            {
+              "title": "Test Case 1: Verify Add tab should be available",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 1276,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-27T10:13:30.159Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5286f8f3d2d5365b17d-af96a0180c22690a34ea",
+              "file": "navigationUi.spec.ts",
+              "line": 13,
+              "column": 13
+            },
+            {
+              "title": "Test Case 1: Verify Search tab should be available",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 1273,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-27T10:13:30.161Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5286f8f3d2d5365b17d-9d4bd924bb5be083ef7d",
+              "file": "navigationUi.spec.ts",
+              "line": 13,
+              "column": 13
+            },
+            {
+              "title": "Test Case 1: Verify Add tab should be available",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 2180,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-27T10:13:32.101Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5286f8f3d2d5365b17d-cf1a6c3cb4cdc5ed6a43",
+              "file": "navigationUi.spec.ts",
+              "line": 13,
+              "column": 13
+            },
+            {
+              "title": "Test Case 1: Verify Search tab should be available",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "passed",
+                      "duration": 2041,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-27T10:13:33.140Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5286f8f3d2d5365b17d-107fa1e5be00125c872a",
+              "file": "navigationUi.spec.ts",
+              "line": 13,
+              "column": 13
+            },
+            {
+              "title": "Test Case 1: Verify Add tab should be available",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "passed",
+                      "duration": 2561,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-27T10:13:36.819Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5286f8f3d2d5365b17d-97cf010564cca5d8f817",
+              "file": "navigationUi.spec.ts",
+              "line": 13,
+              "column": 13
+            },
+            {
+              "title": "Test Case 1: Verify Search tab should be available",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "passed",
+                      "duration": 2633,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-27T10:13:37.090Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b5286f8f3d2d5365b17d-99ae503989ca03d213c0",
+              "file": "navigationUi.spec.ts",
+              "line": 13,
+              "column": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "test.spec.ts",
+      "file": "test.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 999,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-27T10:13:31.540Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b72ba50710186a3d173d-8fe4a819fe6609d6b5f3",
+          "file": "test.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "test 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1223,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-27T10:13:34.764Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b72ba50710186a3d173d-7ecb284f79c01725e915",
+          "file": "test.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "test 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 2279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-27T10:13:39.524Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b72ba50710186a3d173d-f8f3a4bfc5a1c02167cf",
+          "file": "test.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-01-27T10:13:29.606Z",
+    "duration": 12254.685,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import * as os from "node:os";
 
 /**
  * Read environment variables from file.
@@ -39,7 +40,44 @@ export default defineConfig({
     ['monocart-reporter', {
       name: "My Test Report",
       outputFile: 'reports/monocart-report/index.html'
-    }]
+    }],
+    [
+    "allure-playwright",
+        {
+          resultsDir: "allure-results",
+          detail: true,
+          suiteTitle: true,
+          // links: {
+          //   issue: {
+          //     nameTemplate: "Issue #%s",
+          //     urlTemplate: "https://issues.example.com/%s",
+          //   },
+          //   tms: {
+          //     nameTemplate: "TMS #%s",
+          //     urlTemplate: "https://tms.example.com/%s",
+          //   },
+          //   jira: {
+          //     urlTemplate: (v) => `https://jira.example.com/browse/${v}`,
+          //   },
+          // },
+          categories: [
+            {
+              name: "Reports",
+              messageRegex: "bar",
+              traceRegex: "baz",
+              //matchedStatuses: [Status.FAILED, Status.BROKEN],
+            },
+          ],
+          environmentInfo: {
+            os_platform: os.platform(),
+            os_release: os.release(),
+            os_version: os.version(),
+            node_version: process.version,
+            process_platform: process.platform,
+          },
+          storeTrends: true,
+        },
+    ],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -47,7 +85,11 @@ export default defineConfig({
     baseURL: 'http://localhost:5000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    headless: true,
+    trace: 'retain-on-failure',
+    video: 'retain-on-failure',
+    screenshot: 'only-on-failure',
+    ignoreHTTPSErrors: true,
   },
 
   /* Configure projects for major browsers */
