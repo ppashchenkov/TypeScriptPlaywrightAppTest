@@ -18,5 +18,5 @@ node_modules/
 /tests-examples/
 /.github/workflows/playwright.yml
 /allure-report/
-reports/*
+/reports/
 /allure-results/
