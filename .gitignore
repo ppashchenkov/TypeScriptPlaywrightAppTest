@@ -19,3 +19,4 @@ node_modules/
 /.github/workflows/playwright.yml
 /allure-report/*
 /reports/
+/allure-results/*
