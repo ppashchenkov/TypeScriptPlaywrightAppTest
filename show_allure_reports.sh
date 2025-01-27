@@ -1,2 +1,2 @@
 #!/bin/bash
-npx allure open ./allure-report/
+npx allure open reports/allure-report/
