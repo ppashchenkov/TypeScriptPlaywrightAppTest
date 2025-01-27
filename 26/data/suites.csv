@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jan 27 11:01:49 GMT 2025","Mon Jan 27 11:01:49 GMT 2025","170","chromium","test.spec.ts","","","","test 1",""
+"passed","Mon Jan 27 11:01:51 GMT 2025","Mon Jan 27 11:01:52 GMT 2025","462","firefox","navigationUi.spec.ts","Navigation tab are available","","","Test Case 1: Verify Search tab should be available",""
+"passed","Mon Jan 27 11:01:52 GMT 2025","Mon Jan 27 11:01:52 GMT 2025","593","firefox","test.spec.ts","","","","test 1",""
+"passed","Mon Jan 27 11:01:48 GMT 2025","Mon Jan 27 11:01:49 GMT 2025","335","chromium","navigationUi.spec.ts","Navigation tab are available","","","Test Case 1: Verify Add tab should be available",""
+"passed","Mon Jan 27 11:01:49 GMT 2025","Mon Jan 27 11:01:49 GMT 2025","231","chromium","navigationUi.spec.ts","Navigation tab are available","","","Test Case 1: Verify Search tab should be available",""
+"passed","Mon Jan 27 11:01:50 GMT 2025","Mon Jan 27 11:01:51 GMT 2025","1195","firefox","navigationUi.spec.ts","Navigation tab are available","","","Test Case 1: Verify Add tab should be available",""
