@@ -47,19 +47,6 @@ export default defineConfig({
           resultsDir: "allure-results",
           detail: true,
           suiteTitle: true,
-          // links: {
-          //   issue: {
-          //     nameTemplate: "Issue #%s",
-          //     urlTemplate: "https://issues.example.com/%s",
-          //   },
-          //   tms: {
-          //     nameTemplate: "TMS #%s",
-          //     urlTemplate: "https://tms.example.com/%s",
-          //   },
-          //   jira: {
-          //     urlTemplate: (v) => `https://jira.example.com/browse/${v}`,
-          //   },
-          // },
           categories: [
             {
               name: "Reports",
