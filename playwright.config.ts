@@ -20,7 +20,7 @@ export default defineConfig({
      * Maximum time expect() should wait for the condition to be met.
      * For example in await expect(locator).toHaveText();
      */
-    timeout: 5000
+    // timeout: 5000
   },
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -69,7 +69,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: 'http://localhost:5000',
+    baseURL: 'http://192.168.10.245:5000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     headless: true,
@@ -86,10 +86,10 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
     //
     // {
     //   name: 'webkit',

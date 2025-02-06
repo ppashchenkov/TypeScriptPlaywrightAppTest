@@ -16,18 +16,18 @@ export class SearchPage {
     async inputFirstName(firstName: string) {
         await this.firstNamePlaceholder.fill(firstName);
 
-        //return this.page;
+        return this.page;
     }
 
     async clickSearchButton() {
-        await this.searchButton.isEnabled({ timeout: 1000 });
+        // await this.searchButton.isEnabled({ timeout: 1000 });
         await this.searchButton.click();
 
-        //return this.page;
+        return this.page;
     }
 
     async getTbodyRowCounts() {
-        await this.page.waitForTimeout(2000);
+        // await this.page.waitForTimeout(2000);
         return await this.tableRow.count();
     }
 

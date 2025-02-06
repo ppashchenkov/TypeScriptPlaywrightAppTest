@@ -1,4 +1,5 @@
 import {Page, Locator} from "@playwright/test";
+import {SearchPage} from "./search.page";
 
 export class HomePage {
     private readonly page: Page;
@@ -11,6 +12,8 @@ export class HomePage {
 
     async clickSearchTab() {
         await this.searchTab.click();
+
+        return new SearchPage(this.page);
     }
 
 }
