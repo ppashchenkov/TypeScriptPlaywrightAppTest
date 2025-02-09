@@ -9,10 +9,13 @@ yarn-error.log*
 .idea/
 .vscode/*
 node_modules/
-/test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 /tests-examples/
-/reports/
+/reports/test-results/
+/reports/allure-report/
+/reports/html-report/
+/reports/json-report/
+/reports/junit-report/
 /allure-results/
