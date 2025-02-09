@@ -8,6 +8,7 @@ yarn-error.log*
 .env
 .idea/
 .vscode/*
+.DS_Store
 node_modules/
 /playwright-report/
 /blob-report/
@@ -18,4 +19,5 @@ node_modules/
 /reports/html-report/
 /reports/json-report/
 /reports/junit-report/
+/reports/monocart-report/
 /allure-results/
