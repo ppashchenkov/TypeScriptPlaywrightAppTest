@@ -1,9 +1,9 @@
 // import {request} from "@playwright/test";
-// import * as TEST_DATA from "../testData/testData";
-// import {users} from "../testData/usersTestData";
-// import {BASE_URL, USERS_END_POINT} from "../testData/testData";
+// import * as TEST_DATA from "../data/data";
+// import {users} from "../data/usersTestData";
+// import {BASE_URL, USERS_END_POINT} from "../data/data";
 import { APIRequestContext } from "@playwright/test";
-import { API_USERS_ENDPOINT } from "../testData/api_endpoints_data";
+import { API_USERS_ENDPOINT } from "@data/api_endpoints_data";
 
 
 // export async function createNewContext() {

@@ -6,7 +6,10 @@ import path from "path";
 dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 export default defineConfig({
+  tsconfig:'./tsconfig.json',
   testDir: './tests',
+  testIgnore: 'template.*',
+  outputDir: './reports/test-results',
   timeout: 60 * 1000,
   expect: {
     timeout: 5 * 1000
@@ -57,16 +60,28 @@ export default defineConfig({
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',
     ignoreHTTPSErrors: true,
+     testIdAttribute: 'id',
   },
   projects: [
     {
+      name: 'Setup',
+      testMatch: /.*\.setup\.ts/,
+      timeout: 100 * 1000,
+    },
+    {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      testMatch: /.*\.test\.ts/,
+      use: { ...devices['Desktop Chrome'],
+      // headless: !!process.env.CI,
+        },
+      // dependencies: ['Setup'],
     },
 
     // {
     //   name: 'firefox',
+    //     testMatch: /.*\.test\.ts/,
     //   use: { ...devices['Desktop Firefox'] },
+    //   // dependencies: ['Setup'],
     // },
     //
     // {
