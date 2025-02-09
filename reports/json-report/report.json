@@ -1,9 +1,9 @@
 {
   "config": {
-    "configFile": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/playwright.config.ts",
-    "rootDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/tests",
+    "configFile": "/Users/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/playwright.config.ts",
+    "rootDir": "/Users/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/tests",
     "forbidOnly": false,
-    "fullyParallel": true,
+    "fullyParallel": false,
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -39,18 +39,18 @@
         }
       ],
       [
-        "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/node_modules/@estruyf/github-actions-reporter/dist/index.js",
+        "/Users/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/node_modules/@estruyf/github-actions-reporter/dist/index.js",
         null
       ],
       [
-        "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/node_modules/monocart-reporter/lib/index.js",
+        "/Users/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/node_modules/monocart-reporter/lib/index.js",
         {
           "name": "My Test Report",
           "outputFile": "reports/monocart-report/index.html"
         }
       ],
       [
-        "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/node_modules/allure-playwright/dist/cjs/index.js",
+        "/Users/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/node_modules/allure-playwright/dist/cjs/index.js",
         {
           "resultsDir": "allure-results",
           "detail": true,
@@ -63,11 +63,11 @@
             }
           ],
           "environmentInfo": {
-            "os_platform": "linux",
-            "os_release": "6.8.0-51-generic",
-            "os_version": "#52~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Dec  9 15:00:52 UTC 2",
-            "node_version": "v22.13.0",
-            "process_platform": "linux"
+            "os_platform": "darwin",
+            "os_release": "23.6.0",
+            "os_version": "Darwin Kernel Version 23.6.0: Thu Dec 19 20:44:50 PST 2024; root:xnu-10063.141.1.703.2~1/RELEASE_X86_64",
+            "node_version": "v20.17.0",
+            "process_platform": "darwin"
           },
           "storeTrends": true
         }
@@ -80,41 +80,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/test-results",
+        "outputDir": "/Users/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 60000
-      },
-      {
-        "outputDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 60000
-      },
-      {
-        "outputDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "webkit",
-        "name": "webkit",
-        "testDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/tests",
+        "testDir": "/Users/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -131,20 +103,20 @@
   },
   "suites": [
     {
-      "title": "navigationUi.spec.ts",
-      "file": "navigationUi.spec.ts",
+      "title": "search.func.spec.ts",
+      "file": "search.func.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Navigation tab are available",
-          "file": "navigationUi.spec.ts",
-          "line": 7,
+          "title": "Should Search Users By Search Criteria",
+          "file": "search.func.spec.ts",
+          "line": 28,
           "column": 10,
           "specs": [
             {
-              "title": "Test Case 1: Verify Add tab should be available",
+              "title": "Search User With Unique First Name: Run_19",
               "ok": true,
               "tags": [],
               "tests": [
@@ -158,297 +130,33 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 1226,
+                      "duration": 1429,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-01-27T10:51:42.813Z",
+                      "startTime": "2025-02-09T17:16:14.365Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "b5286f8f3d2d5365b17d-af96a0180c22690a34ea",
-              "file": "navigationUi.spec.ts",
-              "line": 13,
-              "column": 13
-            },
-            {
-              "title": "Test Case 1: Verify Search tab should be available",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 761,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-01-27T10:51:42.824Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5286f8f3d2d5365b17d-9d4bd924bb5be083ef7d",
-              "file": "navigationUi.spec.ts",
-              "line": 13,
-              "column": 13
-            },
-            {
-              "title": "Test Case 1: Verify Add tab should be available",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "status": "passed",
-                      "duration": 2267,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-01-27T10:51:44.686Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5286f8f3d2d5365b17d-cf1a6c3cb4cdc5ed6a43",
-              "file": "navigationUi.spec.ts",
-              "line": 13,
-              "column": 13
-            },
-            {
-              "title": "Test Case 1: Verify Search tab should be available",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "status": "passed",
-                      "duration": 2220,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-01-27T10:51:45.446Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5286f8f3d2d5365b17d-107fa1e5be00125c872a",
-              "file": "navigationUi.spec.ts",
-              "line": 13,
-              "column": 13
-            },
-            {
-              "title": "Test Case 1: Verify Add tab should be available",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 2648,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-01-27T10:51:49.275Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5286f8f3d2d5365b17d-97cf010564cca5d8f817",
-              "file": "navigationUi.spec.ts",
-              "line": 13,
-              "column": 13
-            },
-            {
-              "title": "Test Case 1: Verify Search tab should be available",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 2616,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-01-27T10:51:49.841Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b5286f8f3d2d5365b17d-99ae503989ca03d213c0",
-              "file": "navigationUi.spec.ts",
-              "line": 13,
+              "id": "f0c549f384fac9c1ee05-68acbcba86a1fd2c1728",
+              "file": "search.func.spec.ts",
+              "line": 38,
               "column": 13
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "test.spec.ts",
-      "file": "test.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "test 1",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 1136,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-01-27T10:51:43.697Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "b72ba50710186a3d173d-8fe4a819fe6609d6b5f3",
-          "file": "test.spec.ts",
-          "line": 4,
-          "column": 5
-        },
-        {
-          "title": "test 1",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "status": "passed",
-                  "duration": 1299,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-01-27T10:51:47.452Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "b72ba50710186a3d173d-7ecb284f79c01725e915",
-          "file": "test.spec.ts",
-          "line": 4,
-          "column": 5
-        },
-        {
-          "title": "test 1",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "status": "passed",
-                  "duration": 2503,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-01-27T10:51:52.046Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "b72ba50710186a3d173d-f8f3a4bfc5a1c02167cf",
-          "file": "test.spec.ts",
-          "line": 4,
-          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-01-27T10:51:42.264Z",
-    "duration": 12333.099999999999,
-    "expected": 9,
+    "startTime": "2025-02-09T17:16:13.692Z",
+    "duration": 2380.643,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

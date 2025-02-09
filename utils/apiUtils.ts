@@ -1,26 +1,36 @@
-import {request} from "@playwright/test";
-import * as TEST_DATA from "../testData/testData";
-import {users} from "../testData/usersTestData";
-import {BASE_URL, USERS_END_POINT} from "../testData/testData";
+// import {request} from "@playwright/test";
+// import * as TEST_DATA from "../testData/testData";
+// import {users} from "../testData/usersTestData";
+// import {BASE_URL, USERS_END_POINT} from "../testData/testData";
+import { APIRequestContext } from "@playwright/test";
+import { API_USERS_ENDPOINT } from "../testData/api_endpoints_data";
 
-export async function createNewContext() {
-    return await request.newContext()
+
+// export async function createNewContext() {
+//     return await request.newContext()
+// }
+
+// export async function createUser(request: APIRequestContext, data: any) {
+//     await request.post(
+//         API_USERS_ENDPOINT,
+//         {data: user}
+//     )
+//
+//     return await getUserId(created, 'id')
+//     // return await created.json().then((entries) => entries[0].id)
+// }
+
+export async function deleteUsers(request: APIRequestContext) {
+    await request.delete(API_USERS_ENDPOINT);
 }
 
-export async function createUser(request: { post: (arg0: string, arg1: { data: any; }) => any; }, user: any) {
-    const created = await request.post(TEST_DATA.BASE_URL + TEST_DATA.USERS_END_POINT,{
-        data: user
-    })
-    return await getUserId(created, 'id')
-    // return await created.json().then((entries) => entries[0].id)
-}
 
-export async function deleteUser(request: { delete: (arg0: string) => any; }, userId: string) {
-    await request.delete(TEST_DATA.BASE_URL + TEST_DATA.USERS_END_POINT + userId)
-}
+// export async function deleteUser(request: APIRequestContext) {
+//     await request.delete(API_USERS_ENDPOINT);
+// }
 
-export async function deleteAllUsers(request: { delete: (arg0: string) => any; }) {
-    await request.delete(TEST_DATA.BASE_URL + TEST_DATA.USERS_END_POINT)
+export async function deleteAllUsers(request: APIRequestContext) {
+    await request.delete(API_USERS_ENDPOINT)
 }
 
 export function getResponseStatus(response: { status: () => any; }) {
@@ -62,10 +72,19 @@ export async function getJsonValueByKey(response: { json: () => Promise<any>; },
     return await response.json().then((entries) => entries[k])
 }
 
-export async function createUsers(request: { post: (arg0: string, arg1: { data: { firstName: string; lastName: string; age: string; } | { firstName: string; lastName: string; age: string; } | { firstName: string; lastName: string; age: string; } | { firstName: string; lastName: string; age: string; } | { firstName: string; lastName: string; age: string; }; }) => any; }) {
-    for (const [key, value] of Object.entries(users)) {
+// export async function createUsers(request: APIRequestContext) }) {
+//     for (const [key, value] of Object.entries(users)) {
+//         await request.post(
+//             `${BASE_URL}${USERS_END_POINT}`,
+//             {data: value}
+//         )
+//     }
+// }
+
+export async function createUsers(request: APIRequestContext, data: any) {
+    for (const [key, value] of Object.entries(data)) {
         await request.post(
-            `${BASE_URL}${USERS_END_POINT}`,
+            `${API_USERS_ENDPOINT}`,
             {data: value}
         )
     }

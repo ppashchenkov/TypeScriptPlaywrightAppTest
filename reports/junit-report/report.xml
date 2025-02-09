@@ -1,32 +1,6 @@
-<testsuites id="" name="" tests="9" failures="0" skipped="0" errors="0" time="12.333099999999998">
-<testsuite name="navigationUi.spec.ts" timestamp="2025-01-27T10:51:42.284Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.987" errors="0">
-<testcase name="Navigation tab are available › Test Case 1: Verify Add tab should be available" classname="navigationUi.spec.ts" time="1.226">
-</testcase>
-<testcase name="Navigation tab are available › Test Case 1: Verify Search tab should be available" classname="navigationUi.spec.ts" time="0.761">
-</testcase>
-</testsuite>
-<testsuite name="test.spec.ts" timestamp="2025-01-27T10:51:42.284Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.136" errors="0">
-<testcase name="test 1" classname="test.spec.ts" time="1.136">
-</testcase>
-</testsuite>
-<testsuite name="navigationUi.spec.ts" timestamp="2025-01-27T10:51:42.284Z" hostname="firefox" tests="2" failures="0" skipped="0" time="4.487" errors="0">
-<testcase name="Navigation tab are available › Test Case 1: Verify Add tab should be available" classname="navigationUi.spec.ts" time="2.267">
-</testcase>
-<testcase name="Navigation tab are available › Test Case 1: Verify Search tab should be available" classname="navigationUi.spec.ts" time="2.22">
-</testcase>
-</testsuite>
-<testsuite name="test.spec.ts" timestamp="2025-01-27T10:51:42.284Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.299" errors="0">
-<testcase name="test 1" classname="test.spec.ts" time="1.299">
-</testcase>
-</testsuite>
-<testsuite name="navigationUi.spec.ts" timestamp="2025-01-27T10:51:42.284Z" hostname="webkit" tests="2" failures="0" skipped="0" time="5.264" errors="0">
-<testcase name="Navigation tab are available › Test Case 1: Verify Add tab should be available" classname="navigationUi.spec.ts" time="2.648">
-</testcase>
-<testcase name="Navigation tab are available › Test Case 1: Verify Search tab should be available" classname="navigationUi.spec.ts" time="2.616">
-</testcase>
-</testsuite>
-<testsuite name="test.spec.ts" timestamp="2025-01-27T10:51:42.284Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.503" errors="0">
-<testcase name="test 1" classname="test.spec.ts" time="2.503">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="2.380643">
+<testsuite name="search.func.spec.ts" timestamp="2025-02-09T17:16:13.718Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.429" errors="0">
+<testcase name="Should Search Users By Search Criteria › Search User With Unique First Name: Run_19" classname="search.func.spec.ts" time="1.429">
 </testcase>
 </testsuite>
 </testsuites>

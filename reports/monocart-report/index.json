@@ -1,177 +1,76 @@
 {
     "name": "My Test Report",
     "logo": null,
-    "date": 1737975102249,
-    "dateH": "1/27/2025, 1:51:42 PM",
-    "duration": 13403,
-    "durationH": "13.4s",
-    "cwd": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest",
-    "outputFile": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/reports/monocart-report/index.html",
-    "outputDir": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/reports/monocart-report",
+    "date": 1739121373662,
+    "dateH": "2/9/2025, 8:16:13 PM",
+    "duration": 3465,
+    "durationH": "3.5s",
+    "cwd": "/Users/pavel/WebstormProjects/TypeScriptPlaywrightAppTest",
+    "outputFile": "/Users/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/reports/monocart-report/index.html",
+    "outputDir": "/Users/pavel/WebstormProjects/TypeScriptPlaywrightAppTest/reports/monocart-report",
     "metadata": {
-        "actualWorkers": 2
+        "actualWorkers": 1
     },
     "system": {
         "cpu": {
             "color": "#117DBB",
             "count": 4,
-            "model": "Intel(R) Xeon(R) CPU E3-1220 v3 @ 3.10GHz",
-            "speed": 3461
+            "model": "Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz",
+            "speed": 3000
         },
         "mem": {
             "color": "#8B12AE",
-            "total": 16730030080
+            "total": 17179869184
         },
         "arch": "x64",
-        "platform": "linux",
-        "release": "6.8.0-51-generic",
-        "type": "Linux",
-        "version": "#52~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Dec  9 15:00:52 UTC 2",
-        "uptime": 3997.57,
-        "hostname": "pavel-P9D-M-Series",
-        "pid": 15764,
-        "node": "22.13.0",
-        "v8": "12.4.254.21-node.22",
-        "timestampStart": 1737975102249,
+        "platform": "darwin",
+        "release": "23.6.0",
+        "type": "Darwin",
+        "version": "Darwin Kernel Version 23.6.0: Thu Dec 19 20:44:50 PST 2024; root:xnu-10063.141.1.703.2~1/RELEASE_X86_64",
+        "uptime": 12094,
+        "hostname": "iMac-Pro.local",
+        "pid": 10195,
+        "node": "20.17.0",
+        "v8": "11.3.244.8-node.23",
+        "timestampStart": 1739121373662,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 39.44
+                    "percent": 85.75
                 },
                 "mem": {
-                    "free": 10032123904
+                    "free": 99635200
                 },
-                "timestamp": 1737975104251
+                "timestamp": 1739121375664
             },
             {
                 "cpu": {
-                    "percent": 81.6
+                    "percent": 40.7
                 },
                 "mem": {
-                    "free": 9832742912
+                    "free": 327405568
                 },
-                "timestamp": 1737975106253
-            },
-            {
-                "cpu": {
-                    "percent": 53.83
-                },
-                "mem": {
-                    "free": 9541758976
-                },
-                "timestamp": 1737975108255
-            },
-            {
-                "cpu": {
-                    "percent": 63.13
-                },
-                "mem": {
-                    "free": 9969963008
-                },
-                "timestamp": 1737975110256
-            },
-            {
-                "cpu": {
-                    "percent": 52.9
-                },
-                "mem": {
-                    "free": 9719623680
-                },
-                "timestamp": 1737975112258
-            },
-            {
-                "cpu": {
-                    "percent": 12.28
-                },
-                "mem": {
-                    "free": 9920450560
-                },
-                "timestamp": 1737975114261
-            },
-            {
-                "cpu": {
-                    "percent": 4.03
-                },
-                "mem": {
-                    "free": 10246283264
-                },
-                "timestamp": 1737975115643
+                "timestamp": 1739121377121
             }
         ],
         "workers": 2,
         "jobs": [
             {
-                "caseId": "14f613265a85dbf7ae68",
+                "caseId": "5af03373f3b93cb7f560",
                 "parallelIndex": 0,
                 "workerIndex": 0,
-                "timestamp": 1737975102828,
-                "duration": 1329
-            },
-            {
-                "caseId": "eafd4c7a5a92b195eac7",
-                "parallelIndex": 1,
-                "workerIndex": 1,
-                "timestamp": 1737975102845,
-                "duration": 848
-            },
-            {
-                "caseId": "73c682011d6bcd4712e5",
-                "parallelIndex": 1,
-                "workerIndex": 1,
-                "timestamp": 1737975103697,
-                "duration": 1141
-            },
-            {
-                "caseId": "5cd2ccb1d0b7cbd79974",
-                "parallelIndex": 0,
-                "workerIndex": 2,
-                "timestamp": 1737975104700,
-                "duration": 2750
-            },
-            {
-                "caseId": "2bcb6d284a90fcbb8f28",
-                "parallelIndex": 1,
-                "workerIndex": 3,
-                "timestamp": 1737975105452,
-                "duration": 2735
-            },
-            {
-                "caseId": "9d64ac46317b7a88b592",
-                "parallelIndex": 0,
-                "workerIndex": 2,
-                "timestamp": 1737975107452,
-                "duration": 1304
-            },
-            {
-                "caseId": "1a556c78685df08ad764",
-                "parallelIndex": 1,
-                "workerIndex": 4,
-                "timestamp": 1737975109283,
-                "duration": 2761
-            },
-            {
-                "caseId": "50b2a6e058d3ed57b46d",
-                "parallelIndex": 0,
-                "workerIndex": 5,
-                "timestamp": 1737975109846,
-                "duration": 2730
-            },
-            {
-                "caseId": "e905ef93d96eb808427a",
-                "parallelIndex": 1,
-                "workerIndex": 4,
-                "timestamp": 1737975112049,
-                "duration": 2512
+                "timestamp": 1739121374366,
+                "duration": 1646
             }
         ],
-        "cwd": "/home/pavel/WebstormProjects/TypeScriptPlaywrightAppTest",
+        "cwd": "/Users/pavel/WebstormProjects/TypeScriptPlaywrightAppTest",
         "configFile": "playwright.config.ts",
         "playwright": "1.50.0",
         "monocart": "2.9.13",
         "testDir": "tests",
         "outputFile": "reports/monocart-report/index.html",
         "outputDir": "reports/monocart-report",
-        "timestampEnd": 1737975115652
+        "timestampEnd": 1739121377127
     },
     "artifacts": [],
     "trends": [],
@@ -287,1402 +186,307 @@
             "title": "chromium",
             "type": "suite",
             "suiteType": "project",
-            "caseNum": 3,
+            "caseNum": 1,
             "subs": [
                 {
-                    "id": "0e96f4147208d3ea2258",
-                    "title": "navigationUi.spec.ts",
-                    "type": "suite",
-                    "suiteType": "file",
-                    "caseNum": 2,
-                    "subs": [
-                        {
-                            "id": "b6ba00386c91780dfb43",
-                            "title": "Navigation tab are available",
-                            "type": "suite",
-                            "suiteType": "describe",
-                            "caseNum": 1,
-                            "subs": [
-                                {
-                                    "id": "14f613265a85dbf7ae68",
-                                    "title": "Test Case 1: Verify Add tab should be available",
-                                    "type": "case",
-                                    "caseType": "passed",
-                                    "ok": true,
-                                    "outcome": "expected",
-                                    "expectedStatus": "passed",
-                                    "location": "tests/navigationUi.spec.ts:13:13",
-                                    "timestamps": [
-                                        1737975102828,
-                                        1737975104157
-                                    ],
-                                    "duration": 1329,
-                                    "tags": [],
-                                    "timeout": 60000,
-                                    "retry": 0,
-                                    "status": "passed",
-                                    "stepNum": 18,
-                                    "stepFailed": 0,
-                                    "stepSubs": true,
-                                    "subs": [
-                                        {
-                                            "id": "wx30o56dpthgvjupzvny",
-                                            "title": "Before Hooks",
-                                            "type": "step",
-                                            "stepType": "hook",
-                                            "duration": 1137,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "0y3rafr4hm5foaportty",
-                                                    "title": "navigate to home page",
-                                                    "type": "step",
-                                                    "stepType": "hook",
-                                                    "duration": 1135,
-                                                    "location": "tests/navigationUi.spec.ts:9:14",
-                                                    "subs": [
-                                                        {
-                                                            "id": "33050qfwlxydjtcmjmqx",
-                                                            "title": "fixture: browser",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 99,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "c78gafzzqe8q2155o38d",
-                                                                    "title": "browserType.launch",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 92,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "4fnxgspfl0ihzbltyokc",
-                                                            "title": "fixture: context",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 25,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "q9yxp97e1mrakcunoyk2",
-                                                                    "title": "browser.newContext",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 7,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "xdqqx28a1agqfknj8co9",
-                                                            "title": "fixture: page",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 66,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "wiarcrjlral5ijamav6p",
-                                                                    "title": "browserContext.newPage",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 64,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "5p75mmn0zsltyanyvsut",
-                                                            "title": "page.goto(/)",
-                                                            "type": "step",
-                                                            "stepType": "pw:api",
-                                                            "duration": 933,
-                                                            "location": "tests/navigationUi.spec.ts:10:24"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "h7y7yrbnj4obi7ivc3zz",
-                                            "title": "locator.getByRole('link', { name: 'Add', exact: true }).getAttribute",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 38,
-                                            "location": "tests/navigationUi.spec.ts:15:49"
-                                        },
-                                        {
-                                            "id": "m6e5agcq6qe7psxobyfj",
-                                            "title": "expect.toBeAttached",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 15,
-                                            "location": "tests/navigationUi.spec.ts:17:31"
-                                        },
-                                        {
-                                            "id": "3gdn0qsgwl6jrni496ua",
-                                            "title": "expect.toHaveCount",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 7,
-                                            "location": "tests/navigationUi.spec.ts:18:31"
-                                        },
-                                        {
-                                            "id": "atqicd7014pbc7s4kebx",
-                                            "title": "expect.toBeVisible",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 8,
-                                            "location": "tests/navigationUi.spec.ts:19:31"
-                                        },
-                                        {
-                                            "id": "5fkknhsavrhcwiyh354y",
-                                            "title": "expect.toBeEnabled",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 6,
-                                            "location": "tests/navigationUi.spec.ts:20:31"
-                                        },
-                                        {
-                                            "id": "37n7hyzwf9nhz51e3tas",
-                                            "title": "expect.toStrictEqual",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 1,
-                                            "location": "tests/navigationUi.spec.ts:21:39"
-                                        },
-                                        {
-                                            "id": "d82yn7ay65mrvgxyky4t",
-                                            "title": "After Hooks",
-                                            "type": "step",
-                                            "stepType": "hook",
-                                            "duration": 112,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "gcdymntdrjkyip85m9x9",
-                                                    "title": "fixture: page",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 1,
-                                                    "location": ""
-                                                },
-                                                {
-                                                    "id": "8jfd7cls7f4gahfhvwj4",
-                                                    "title": "fixture: context",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 0,
-                                                    "location": ""
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "location": "tests/navigationUi.spec.ts:7:10"
-                        },
-                        {
-                            "id": "b6ba00386c91780dfb43",
-                            "title": "Navigation tab are available",
-                            "type": "suite",
-                            "suiteType": "describe",
-                            "caseNum": 1,
-                            "subs": [
-                                {
-                                    "id": "eafd4c7a5a92b195eac7",
-                                    "title": "Test Case 1: Verify Search tab should be available",
-                                    "type": "case",
-                                    "caseType": "passed",
-                                    "ok": true,
-                                    "outcome": "expected",
-                                    "expectedStatus": "passed",
-                                    "location": "tests/navigationUi.spec.ts:13:13",
-                                    "timestamps": [
-                                        1737975102845,
-                                        1737975103693
-                                    ],
-                                    "duration": 848,
-                                    "tags": [],
-                                    "timeout": 60000,
-                                    "retry": 0,
-                                    "status": "passed",
-                                    "stepNum": 18,
-                                    "stepFailed": 0,
-                                    "stepSubs": true,
-                                    "subs": [
-                                        {
-                                            "id": "5pxl2t6wa4ii8dr9h3z8",
-                                            "title": "Before Hooks",
-                                            "type": "step",
-                                            "stepType": "hook",
-                                            "duration": 664,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "yvq3adr7alicyg3ghxsj",
-                                                    "title": "navigate to home page",
-                                                    "type": "step",
-                                                    "stepType": "hook",
-                                                    "duration": 663,
-                                                    "location": "tests/navigationUi.spec.ts:9:14",
-                                                    "subs": [
-                                                        {
-                                                            "id": "4v86cowvf8jwa1wr1w5n",
-                                                            "title": "fixture: browser",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 87,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "logcb33dj0uh0s7e7kkq",
-                                                                    "title": "browserType.launch",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 84,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "f2gv1eopdzn1pcdgjqzl",
-                                                            "title": "fixture: context",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 25,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "xmclgixevy02cof3wx60",
-                                                                    "title": "browser.newContext",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 13,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "j2rbarygjzwk4k00yfih",
-                                                            "title": "fixture: page",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 49,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "2v2uofvp5526zyakv7j4",
-                                                                    "title": "browserContext.newPage",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 47,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "l280fv3hrz16db45bkxs",
-                                                            "title": "page.goto(/)",
-                                                            "type": "step",
-                                                            "stepType": "pw:api",
-                                                            "duration": 490,
-                                                            "location": "tests/navigationUi.spec.ts:10:24"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "vcohggf3o1dv0dysujk2",
-                                            "title": "locator.getByRole('link', { name: 'Search', exact: true }).getAttribute",
-                                            "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 34,
-                                            "location": "tests/navigationUi.spec.ts:15:49"
-                                        },
-                                        {
-                                            "id": "oph82g8j9t7d1qm2ke4f",
-                                            "title": "expect.toBeAttached",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 16,
-                                            "location": "tests/navigationUi.spec.ts:17:31"
-                                        },
-                                        {
-                                            "id": "7ioj2jgbf0fwsjrox3pg",
-                                            "title": "expect.toHaveCount",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 7,
-                                            "location": "tests/navigationUi.spec.ts:18:31"
-                                        },
-                                        {
-                                            "id": "7mf480yk8vj05mrmujm8",
-                                            "title": "expect.toBeVisible",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 8,
-                                            "location": "tests/navigationUi.spec.ts:19:31"
-                                        },
-                                        {
-                                            "id": "8ehc1wt6ou0z96b0z84w",
-                                            "title": "expect.toBeEnabled",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 6,
-                                            "location": "tests/navigationUi.spec.ts:20:31"
-                                        },
-                                        {
-                                            "id": "tk1vr12tcof09kn3pxur",
-                                            "title": "expect.toStrictEqual",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 1,
-                                            "location": "tests/navigationUi.spec.ts:21:39"
-                                        },
-                                        {
-                                            "id": "jj6zda0eljsm6a0ei27k",
-                                            "title": "After Hooks",
-                                            "type": "step",
-                                            "stepType": "hook",
-                                            "duration": 111,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "xve3wq44tbzi84mq0nl0",
-                                                    "title": "fixture: page",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 0,
-                                                    "location": ""
-                                                },
-                                                {
-                                                    "id": "dm0t6y3s1fg0n4oupuq2",
-                                                    "title": "fixture: context",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 0,
-                                                    "location": ""
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "location": "tests/navigationUi.spec.ts:7:10"
-                        }
-                    ],
-                    "location": "tests/navigationUi.spec.ts:0:0"
-                },
-                {
-                    "id": "5d712a776169657246db",
-                    "title": "test.spec.ts",
+                    "id": "b1ea3f03a21f9de36371",
+                    "title": "search.func.spec.ts",
                     "type": "suite",
                     "suiteType": "file",
                     "caseNum": 1,
                     "subs": [
                         {
-                            "id": "73c682011d6bcd4712e5",
-                            "title": "test 1",
-                            "type": "case",
-                            "caseType": "passed",
-                            "ok": true,
-                            "outcome": "expected",
-                            "expectedStatus": "passed",
-                            "location": "tests/test.spec.ts:4:5",
-                            "timestamps": [
-                                1737975103697,
-                                1737975104838
-                            ],
-                            "duration": 1141,
-                            "tags": [],
-                            "timeout": 60000,
-                            "retry": 0,
-                            "status": "passed",
-                            "stepNum": 9,
-                            "stepFailed": 0,
-                            "stepSubs": true,
-                            "subs": [
-                                {
-                                    "id": "l9z9svzh3oivvl7jinqy",
-                                    "title": "Before Hooks",
-                                    "type": "step",
-                                    "stepType": "hook",
-                                    "duration": 38,
-                                    "location": "",
-                                    "subs": [
-                                        {
-                                            "id": "qpq57wnpxoe2y6wa7g67",
-                                            "title": "fixture: context",
-                                            "type": "step",
-                                            "stepType": "fixture",
-                                            "duration": 7,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "24ua3wrkzhbw0y4w8vqk",
-                                                    "title": "browser.newContext",
-                                                    "type": "step",
-                                                    "stepType": "pw:api",
-                                                    "duration": 3,
-                                                    "location": ""
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "gqkfp439n1cuahf2ubdq",
-                                            "title": "fixture: page",
-                                            "type": "step",
-                                            "stepType": "fixture",
-                                            "duration": 28,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "leiwcb33c4g6nx72912b",
-                                                    "title": "browserContext.newPage",
-                                                    "type": "step",
-                                                    "stepType": "pw:api",
-                                                    "duration": 25,
-                                                    "location": ""
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "li5l9pycbgkg0s0z7o1c",
-                                    "title": "page.goto(http://localhost:5000)",
-                                    "type": "step",
-                                    "stepType": "pw:api",
-                                    "duration": 958,
-                                    "location": "tests/test.spec.ts:5:16"
-                                },
-                                {
-                                    "id": "73gwh1v1cb1j7fmgt9fz",
-                                    "title": "After Hooks",
-                                    "type": "step",
-                                    "stepType": "hook",
-                                    "duration": 143,
-                                    "location": "",
-                                    "subs": [
-                                        {
-                                            "id": "izvz6ydlfy7fvjp8pt8h",
-                                            "title": "fixture: page",
-                                            "type": "step",
-                                            "stepType": "fixture",
-                                            "duration": 0,
-                                            "location": ""
-                                        },
-                                        {
-                                            "id": "k4oyt09zj6br90i8xspx",
-                                            "title": "fixture: context",
-                                            "type": "step",
-                                            "stepType": "fixture",
-                                            "duration": 0,
-                                            "location": ""
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "location": "tests/test.spec.ts:0:0"
-                }
-            ],
-            "metadata": {}
-        },
-        {
-            "id": "acb943ac7d07d80a71fa",
-            "title": "firefox",
-            "type": "suite",
-            "suiteType": "project",
-            "caseNum": 3,
-            "subs": [
-                {
-                    "id": "b0afb91774408a0ae359",
-                    "title": "navigationUi.spec.ts",
-                    "type": "suite",
-                    "suiteType": "file",
-                    "caseNum": 2,
-                    "subs": [
-                        {
-                            "id": "11c132c48a0794ecfda9",
-                            "title": "Navigation tab are available",
+                            "id": "f3fb5ee1ac462220c25a",
+                            "title": "Should Search Users By Search Criteria",
                             "type": "suite",
                             "suiteType": "describe",
                             "caseNum": 1,
                             "subs": [
                                 {
-                                    "id": "5cd2ccb1d0b7cbd79974",
-                                    "title": "Test Case 1: Verify Add tab should be available",
+                                    "id": "5af03373f3b93cb7f560",
+                                    "title": "Search User With Unique First Name: Run_19",
                                     "type": "case",
                                     "caseType": "passed",
                                     "ok": true,
                                     "outcome": "expected",
                                     "expectedStatus": "passed",
-                                    "location": "tests/navigationUi.spec.ts:13:13",
+                                    "location": "tests/search.func.spec.ts:38:13",
                                     "timestamps": [
-                                        1737975104700,
-                                        1737975107450
+                                        1739121374366,
+                                        1739121376012
                                     ],
-                                    "duration": 2750,
+                                    "duration": 1646,
                                     "tags": [],
                                     "timeout": 60000,
                                     "retry": 0,
                                     "status": "passed",
-                                    "stepNum": 18,
+                                    "stepNum": 37,
                                     "stepFailed": 0,
                                     "stepSubs": true,
                                     "subs": [
                                         {
-                                            "id": "wncsnokf2z4ju94u57xc",
+                                            "id": "77dlxqir7sokjnbribv4",
                                             "title": "Before Hooks",
                                             "type": "step",
                                             "stepType": "hook",
-                                            "duration": 2507,
+                                            "duration": 855,
                                             "location": "",
                                             "subs": [
                                                 {
-                                                    "id": "xszqu3b47vuekr719zi2",
-                                                    "title": "navigate to home page",
+                                                    "id": "krr71t0xjp2t514yhmtc",
+                                                    "title": "Create API Request Context, Create Preconditions",
                                                     "type": "step",
                                                     "stepType": "hook",
-                                                    "duration": 2505,
-                                                    "location": "tests/navigationUi.spec.ts:9:14",
+                                                    "duration": 854,
+                                                    "location": "tests/search.func.spec.ts:31:14",
                                                     "subs": [
                                                         {
-                                                            "id": "5jeojofehkfmhd082vw9",
+                                                            "id": "1yjinv1l1ammnqokzuie",
                                                             "title": "fixture: browser",
                                                             "type": "step",
                                                             "stepType": "fixture",
-                                                            "duration": 472,
+                                                            "duration": 197,
                                                             "location": "",
                                                             "subs": [
                                                                 {
-                                                                    "id": "icplhi60k48aeufb9zc4",
+                                                                    "id": "64t904jqq50vuybwyw5d",
                                                                     "title": "browserType.launch",
                                                                     "type": "step",
                                                                     "stepType": "pw:api",
-                                                                    "duration": 468,
+                                                                    "duration": 194,
                                                                     "location": ""
                                                                 }
                                                             ]
                                                         },
                                                         {
-                                                            "id": "9xi7ckx2hxdjmtzjsbh4",
+                                                            "id": "9xrogfmukk27cw9ag48l",
                                                             "title": "fixture: context",
                                                             "type": "step",
                                                             "stepType": "fixture",
-                                                            "duration": 89,
+                                                            "duration": 37,
                                                             "location": "",
                                                             "subs": [
                                                                 {
-                                                                    "id": "p7emvcctmqqqvr68t4o9",
+                                                                    "id": "cnjgz7kgbuz556o2oo9a",
                                                                     "title": "browser.newContext",
                                                                     "type": "step",
                                                                     "stepType": "pw:api",
-                                                                    "duration": 60,
+                                                                    "duration": 10,
                                                                     "location": ""
                                                                 }
                                                             ]
                                                         },
                                                         {
-                                                            "id": "v2gd2uqhldm0bzm7bs41",
+                                                            "id": "gv4sktbprjozx19r8nks",
                                                             "title": "fixture: page",
                                                             "type": "step",
                                                             "stepType": "fixture",
-                                                            "duration": 678,
+                                                            "duration": 128,
                                                             "location": "",
                                                             "subs": [
                                                                 {
-                                                                    "id": "bq2nbdkxii5ylkv5pxxu",
+                                                                    "id": "6gfs9hrv66zlzmqyfyzm",
                                                                     "title": "browserContext.newPage",
                                                                     "type": "step",
                                                                     "stepType": "pw:api",
-                                                                    "duration": 677,
+                                                                    "duration": 125,
                                                                     "location": ""
                                                                 }
                                                             ]
                                                         },
                                                         {
-                                                            "id": "fcxzefe0oyfcsixjfozp",
+                                                            "id": "zm840b7li67ydsxbylf1",
+                                                            "title": "apiRequest.newContext",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 5,
+                                                            "location": "tests/search.func.spec.ts:32:26"
+                                                        },
+                                                        {
+                                                            "id": "q8ujopmxnwyjv94d1tsx",
+                                                            "title": "apiRequestContext.delete(/api/users/)",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 39,
+                                                            "location": "utils/apiUtils.ts:24:25"
+                                                        },
+                                                        {
+                                                            "id": "o7dtl64rv2eerfaiy8tk",
+                                                            "title": "apiRequestContext.post(/api/users/)",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 74,
+                                                            "location": "utils/apiUtils.ts:86:23",
+                                                            "count": 5
+                                                        },
+                                                        {
+                                                            "id": "x55tee18x9bb86htf51q",
                                                             "title": "page.goto(/)",
                                                             "type": "step",
                                                             "stepType": "pw:api",
-                                                            "duration": 1251,
-                                                            "location": "tests/navigationUi.spec.ts:10:24"
+                                                            "duration": 327,
+                                                            "location": "tests/search.func.spec.ts:35:24"
                                                         }
                                                     ]
                                                 }
                                             ]
                                         },
                                         {
-                                            "id": "bapqojxvd7imyecq5ufs",
-                                            "title": "locator.getByRole('link', { name: 'Add', exact: true }).getAttribute",
+                                            "id": "fle9o9qirwi497iralod",
+                                            "title": "expect.toBeEnabled",
                                             "type": "step",
-                                            "stepType": "pw:api",
-                                            "duration": 43,
-                                            "location": "tests/navigationUi.spec.ts:15:49"
+                                            "stepType": "expect",
+                                            "duration": 51,
+                                            "location": "tests/search.func.spec.ts:44:37"
                                         },
                                         {
-                                            "id": "cvwaj8w08vt3uga8yy9g",
+                                            "id": "x5uolrpyoogd1h2xd2aq",
+                                            "title": "locator.getByRole('link', { name: 'Search', exact: true }).hover",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 80,
+                                            "location": "tests/search.func.spec.ts:46:29"
+                                        },
+                                        {
+                                            "id": "w15mz7fn4gx2pkdl7mp1",
+                                            "title": "locator.getByRole('link', { name: 'Search', exact: true }).click",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 119,
+                                            "location": "tests/search.func.spec.ts:47:29"
+                                        },
+                                        {
+                                            "id": "4166uw1mzbpitg7anj46",
                                             "title": "expect.toBeAttached",
                                             "type": "step",
                                             "stepType": "expect",
-                                            "duration": 30,
-                                            "location": "tests/navigationUi.spec.ts:17:31"
+                                            "duration": 71,
+                                            "location": "tests/search.func.spec.ts:49:44"
                                         },
                                         {
-                                            "id": "0zx396z96fykgj5q3yrx",
-                                            "title": "expect.toHaveCount",
+                                            "id": "98j4ilvevvl6nkvx0lrz",
+                                            "title": "expect.toBeDisabled",
                                             "type": "step",
                                             "stepType": "expect",
-                                            "duration": 17,
-                                            "location": "tests/navigationUi.spec.ts:18:31"
+                                            "duration": 16,
+                                            "location": "tests/search.func.spec.ts:50:40"
                                         },
                                         {
-                                            "id": "6vip2cerm0pzf4hghcjt",
+                                            "id": "rd4jnpi6z7fzy0fen6rb",
                                             "title": "expect.toBeVisible",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 13,
-                                            "location": "tests/navigationUi.spec.ts:19:31"
-                                        },
-                                        {
-                                            "id": "1ypcolltnzl1o0hxdnl8",
-                                            "title": "expect.toBeEnabled",
                                             "type": "step",
                                             "stepType": "expect",
                                             "duration": 10,
-                                            "location": "tests/navigationUi.spec.ts:20:31"
+                                            "location": "tests/search.func.spec.ts:51:48"
                                         },
                                         {
-                                            "id": "7c5bepfw459v2yl0wixa",
-                                            "title": "expect.toStrictEqual",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 1,
-                                            "location": "tests/navigationUi.spec.ts:21:39"
-                                        },
-                                        {
-                                            "id": "16jwlog1qpcw5qs6eu8y",
-                                            "title": "After Hooks",
-                                            "type": "step",
-                                            "stepType": "hook",
-                                            "duration": 119,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "y3j7bvaqwx43gskuuibv",
-                                                    "title": "fixture: page",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 0,
-                                                    "location": ""
-                                                },
-                                                {
-                                                    "id": "zzej1diavcvbhfcbbmh1",
-                                                    "title": "fixture: context",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 0,
-                                                    "location": ""
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "location": "tests/navigationUi.spec.ts:7:10"
-                        },
-                        {
-                            "id": "11c132c48a0794ecfda9",
-                            "title": "Navigation tab are available",
-                            "type": "suite",
-                            "suiteType": "describe",
-                            "caseNum": 1,
-                            "subs": [
-                                {
-                                    "id": "2bcb6d284a90fcbb8f28",
-                                    "title": "Test Case 1: Verify Search tab should be available",
-                                    "type": "case",
-                                    "caseType": "passed",
-                                    "ok": true,
-                                    "outcome": "expected",
-                                    "expectedStatus": "passed",
-                                    "location": "tests/navigationUi.spec.ts:13:13",
-                                    "timestamps": [
-                                        1737975105452,
-                                        1737975108187
-                                    ],
-                                    "duration": 2735,
-                                    "tags": [],
-                                    "timeout": 60000,
-                                    "retry": 0,
-                                    "status": "passed",
-                                    "stepNum": 18,
-                                    "stepFailed": 0,
-                                    "stepSubs": true,
-                                    "subs": [
-                                        {
-                                            "id": "8jnvtgh6qa240gcx4u24",
-                                            "title": "Before Hooks",
-                                            "type": "step",
-                                            "stepType": "hook",
-                                            "duration": 2540,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "8k8jhkiqwmu31jhuxzto",
-                                                    "title": "navigate to home page",
-                                                    "type": "step",
-                                                    "stepType": "hook",
-                                                    "duration": 2538,
-                                                    "location": "tests/navigationUi.spec.ts:9:14",
-                                                    "subs": [
-                                                        {
-                                                            "id": "onkacccrbg5xqmqej28y",
-                                                            "title": "fixture: browser",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 503,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "g2x3sw5htcbl0czupfdn",
-                                                                    "title": "browserType.launch",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 493,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "bm611tqlvc5n9m9uoyxg",
-                                                            "title": "fixture: context",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 119,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "eqiz58oadq11bln94v7m",
-                                                                    "title": "browser.newContext",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 86,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "c5w1x4ghpmx7eub2hhwo",
-                                                            "title": "fixture: page",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 725,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "qdkujxa2vazi7tqscz46",
-                                                                    "title": "browserContext.newPage",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 723,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "9nv64gr68a831om7g5j3",
-                                                            "title": "page.goto(/)",
-                                                            "type": "step",
-                                                            "stepType": "pw:api",
-                                                            "duration": 1177,
-                                                            "location": "tests/navigationUi.spec.ts:10:24"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "z0y4ka9uto8p04fik6sj",
-                                            "title": "locator.getByRole('link', { name: 'Search', exact: true }).getAttribute",
+                                            "id": "umimx7obyhn35yv7cgnt",
+                                            "title": "locator.getByPlaceholder('Enter first name').fill",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 41,
-                                            "location": "tests/navigationUi.spec.ts:15:49"
+                                            "duration": 21,
+                                            "location": "tests/search.func.spec.ts:53:40"
                                         },
                                         {
-                                            "id": "pacv7rxy886fkwl40y2z",
-                                            "title": "expect.toBeAttached",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 20,
-                                            "location": "tests/navigationUi.spec.ts:17:31"
-                                        },
-                                        {
-                                            "id": "gfzwpuzi36hnbgjtuqo3",
-                                            "title": "expect.toHaveCount",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 12,
-                                            "location": "tests/navigationUi.spec.ts:18:31"
-                                        },
-                                        {
-                                            "id": "murti93f65l0j30j59ky",
-                                            "title": "expect.toBeVisible",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 12,
-                                            "location": "tests/navigationUi.spec.ts:19:31"
-                                        },
-                                        {
-                                            "id": "28jjnrlv4kg1g1vh2f5j",
+                                            "id": "4kjm87h2n8dsqz6ct4bv",
                                             "title": "expect.toBeEnabled",
                                             "type": "step",
                                             "stepType": "expect",
-                                            "duration": 8,
-                                            "location": "tests/navigationUi.spec.ts:20:31"
+                                            "duration": 19,
+                                            "location": "tests/search.func.spec.ts:55:40"
                                         },
                                         {
-                                            "id": "qaqtzwgzwxknpmpamnow",
-                                            "title": "expect.toStrictEqual",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 1,
-                                            "location": "tests/navigationUi.spec.ts:21:39"
-                                        },
-                                        {
-                                            "id": "5khhnaqz1jbphgpka8n6",
-                                            "title": "After Hooks",
-                                            "type": "step",
-                                            "stepType": "hook",
-                                            "duration": 93,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "a1ldls3i97h8mkzipqg7",
-                                                    "title": "fixture: page",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 0,
-                                                    "location": ""
-                                                },
-                                                {
-                                                    "id": "0r92ejn1ftlx8szpqqt7",
-                                                    "title": "fixture: context",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 0,
-                                                    "location": ""
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "location": "tests/navigationUi.spec.ts:7:10"
-                        }
-                    ],
-                    "location": "tests/navigationUi.spec.ts:0:0"
-                },
-                {
-                    "id": "e7f685fdd998c55ede49",
-                    "title": "test.spec.ts",
-                    "type": "suite",
-                    "suiteType": "file",
-                    "caseNum": 1,
-                    "subs": [
-                        {
-                            "id": "9d64ac46317b7a88b592",
-                            "title": "test 1",
-                            "type": "case",
-                            "caseType": "passed",
-                            "ok": true,
-                            "outcome": "expected",
-                            "expectedStatus": "passed",
-                            "location": "tests/test.spec.ts:4:5",
-                            "timestamps": [
-                                1737975107452,
-                                1737975108756
-                            ],
-                            "duration": 1304,
-                            "tags": [],
-                            "timeout": 60000,
-                            "retry": 0,
-                            "status": "passed",
-                            "stepNum": 9,
-                            "stepFailed": 0,
-                            "stepSubs": true,
-                            "subs": [
-                                {
-                                    "id": "fk9j2swceneyhps35t1c",
-                                    "title": "Before Hooks",
-                                    "type": "step",
-                                    "stepType": "hook",
-                                    "duration": 211,
-                                    "location": "",
-                                    "subs": [
-                                        {
-                                            "id": "gm1pa3xpyf40ew6apw19",
-                                            "title": "fixture: context",
-                                            "type": "step",
-                                            "stepType": "fixture",
-                                            "duration": 12,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "6udg03jio3ixyfc7d55f",
-                                                    "title": "browser.newContext",
-                                                    "type": "step",
-                                                    "stepType": "pw:api",
-                                                    "duration": 4,
-                                                    "location": ""
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "ym3nacvod1te963dv0b1",
-                                            "title": "fixture: page",
-                                            "type": "step",
-                                            "stepType": "fixture",
-                                            "duration": 196,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "zntom0uahlc2f46vfys3",
-                                                    "title": "browserContext.newPage",
-                                                    "type": "step",
-                                                    "stepType": "pw:api",
-                                                    "duration": 195,
-                                                    "location": ""
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "nbcn8n99ezmbn3b7vqre",
-                                    "title": "page.goto(http://localhost:5000)",
-                                    "type": "step",
-                                    "stepType": "pw:api",
-                                    "duration": 990,
-                                    "location": "tests/test.spec.ts:5:16"
-                                },
-                                {
-                                    "id": "4ybabwzj1ttqn819ioyu",
-                                    "title": "After Hooks",
-                                    "type": "step",
-                                    "stepType": "hook",
-                                    "duration": 99,
-                                    "location": "",
-                                    "subs": [
-                                        {
-                                            "id": "r1e456v4dtezbqno6wxi",
-                                            "title": "fixture: page",
-                                            "type": "step",
-                                            "stepType": "fixture",
-                                            "duration": 0,
-                                            "location": ""
-                                        },
-                                        {
-                                            "id": "vfojpsr0g3ea8elmkb83",
-                                            "title": "fixture: context",
-                                            "type": "step",
-                                            "stepType": "fixture",
-                                            "duration": 1,
-                                            "location": ""
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "location": "tests/test.spec.ts:0:0"
-                }
-            ],
-            "metadata": {}
-        },
-        {
-            "id": "95f94d5b8bec7815b4d3",
-            "title": "webkit",
-            "type": "suite",
-            "suiteType": "project",
-            "caseNum": 3,
-            "subs": [
-                {
-                    "id": "c4b17a4093608eaf1df8",
-                    "title": "navigationUi.spec.ts",
-                    "type": "suite",
-                    "suiteType": "file",
-                    "caseNum": 2,
-                    "subs": [
-                        {
-                            "id": "d20042a409528f11402c",
-                            "title": "Navigation tab are available",
-                            "type": "suite",
-                            "suiteType": "describe",
-                            "caseNum": 1,
-                            "subs": [
-                                {
-                                    "id": "1a556c78685df08ad764",
-                                    "title": "Test Case 1: Verify Add tab should be available",
-                                    "type": "case",
-                                    "caseType": "passed",
-                                    "ok": true,
-                                    "outcome": "expected",
-                                    "expectedStatus": "passed",
-                                    "location": "tests/navigationUi.spec.ts:13:13",
-                                    "timestamps": [
-                                        1737975109283,
-                                        1737975112044
-                                    ],
-                                    "duration": 2761,
-                                    "tags": [],
-                                    "timeout": 60000,
-                                    "retry": 0,
-                                    "status": "passed",
-                                    "stepNum": 18,
-                                    "stepFailed": 0,
-                                    "stepSubs": true,
-                                    "subs": [
-                                        {
-                                            "id": "mcx1c944xtfnenq3kkyu",
-                                            "title": "Before Hooks",
-                                            "type": "step",
-                                            "stepType": "hook",
-                                            "duration": 2364,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "c9tyhj0ptb05d3fh9co1",
-                                                    "title": "navigate to home page",
-                                                    "type": "step",
-                                                    "stepType": "hook",
-                                                    "duration": 2363,
-                                                    "location": "tests/navigationUi.spec.ts:9:14",
-                                                    "subs": [
-                                                        {
-                                                            "id": "eoit6bf9kwyfony1olsu",
-                                                            "title": "fixture: browser",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 100,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "swd1mqevwmohu0uoj4vj",
-                                                                    "title": "browserType.launch",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 97,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "els4kzxjg4mwfzb3hikj",
-                                                            "title": "fixture: context",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 25,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "1dm2neelddyuo0pgut6l",
-                                                                    "title": "browser.newContext",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 12,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "8jumlmacslhgxotjb1vc",
-                                                            "title": "fixture: page",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 1049,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "6fi0be1e7xrw17stqwvl",
-                                                                    "title": "browserContext.newPage",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 1047,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "b0ggf6ls29l9cclbnqqs",
-                                                            "title": "page.goto(/)",
-                                                            "type": "step",
-                                                            "stepType": "pw:api",
-                                                            "duration": 1175,
-                                                            "location": "tests/navigationUi.spec.ts:10:24"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "6ps29xbpifsk4ladvtij",
-                                            "title": "locator.getByRole('link', { name: 'Add', exact: true }).getAttribute",
+                                            "id": "94xu71xau4y5fkrkymlz",
+                                            "title": "locator.getByRole('button', { name: 'Search', exact: true }).click",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 45,
-                                            "location": "tests/navigationUi.spec.ts:15:49"
+                                            "duration": 61,
+                                            "location": "tests/search.func.spec.ts:57:32"
                                         },
                                         {
-                                            "id": "0ub0nhwppbr41wsswmlm",
-                                            "title": "expect.toBeAttached",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 17,
-                                            "location": "tests/navigationUi.spec.ts:17:31"
-                                        },
-                                        {
-                                            "id": "mmm3d3n8kv6reiy8aoua",
+                                            "id": "yo94bupxel2si288ov5a",
                                             "title": "expect.toHaveCount",
                                             "type": "step",
                                             "stepType": "expect",
-                                            "duration": 11,
-                                            "location": "tests/navigationUi.spec.ts:18:31"
+                                            "duration": 10,
+                                            "location": "tests/search.func.spec.ts:59:36"
                                         },
                                         {
-                                            "id": "wovc6incx8gsx4epjf8c",
-                                            "title": "expect.toBeVisible",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 13,
-                                            "location": "tests/navigationUi.spec.ts:19:31"
-                                        },
-                                        {
-                                            "id": "xoqmahj02dpodbkx4zu5",
-                                            "title": "expect.toBeEnabled",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 11,
-                                            "location": "tests/navigationUi.spec.ts:20:31"
-                                        },
-                                        {
-                                            "id": "4b6bwbfc7fawp92nww8i",
-                                            "title": "expect.toStrictEqual",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 1,
-                                            "location": "tests/navigationUi.spec.ts:21:39"
-                                        },
-                                        {
-                                            "id": "xobqw399klosv9kl6wyo",
-                                            "title": "After Hooks",
-                                            "type": "step",
-                                            "stepType": "hook",
-                                            "duration": 285,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "ih4pd7bx4vi2imrb2c70",
-                                                    "title": "fixture: page",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 0,
-                                                    "location": ""
-                                                },
-                                                {
-                                                    "id": "66g7dgw1mxzxgp119d32",
-                                                    "title": "fixture: context",
-                                                    "type": "step",
-                                                    "stepType": "fixture",
-                                                    "duration": 1,
-                                                    "location": ""
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "location": "tests/navigationUi.spec.ts:7:10"
-                        },
-                        {
-                            "id": "d20042a409528f11402c",
-                            "title": "Navigation tab are available",
-                            "type": "suite",
-                            "suiteType": "describe",
-                            "caseNum": 1,
-                            "subs": [
-                                {
-                                    "id": "50b2a6e058d3ed57b46d",
-                                    "title": "Test Case 1: Verify Search tab should be available",
-                                    "type": "case",
-                                    "caseType": "passed",
-                                    "ok": true,
-                                    "outcome": "expected",
-                                    "expectedStatus": "passed",
-                                    "location": "tests/navigationUi.spec.ts:13:13",
-                                    "timestamps": [
-                                        1737975109846,
-                                        1737975112576
-                                    ],
-                                    "duration": 2730,
-                                    "tags": [],
-                                    "timeout": 60000,
-                                    "retry": 0,
-                                    "status": "passed",
-                                    "stepNum": 18,
-                                    "stepFailed": 0,
-                                    "stepSubs": true,
-                                    "subs": [
-                                        {
-                                            "id": "e4paxslgyaykeboegvi0",
-                                            "title": "Before Hooks",
-                                            "type": "step",
-                                            "stepType": "hook",
-                                            "duration": 2312,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "yo8yq9he52fmherlepfr",
-                                                    "title": "navigate to home page",
-                                                    "type": "step",
-                                                    "stepType": "hook",
-                                                    "duration": 2311,
-                                                    "location": "tests/navigationUi.spec.ts:9:14",
-                                                    "subs": [
-                                                        {
-                                                            "id": "drk8da8pru0c0i6rfq05",
-                                                            "title": "fixture: browser",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 94,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "truj56qe6jbu1ipgy3ay",
-                                                                    "title": "browserType.launch",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 91,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "evzwr922230ohutm8lm3",
-                                                            "title": "fixture: context",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 20,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "868ywz42xqcajs9m6cy4",
-                                                                    "title": "browser.newContext",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 8,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "vajpth1xl05524gq5y39",
-                                                            "title": "fixture: page",
-                                                            "type": "step",
-                                                            "stepType": "fixture",
-                                                            "duration": 1048,
-                                                            "location": "",
-                                                            "subs": [
-                                                                {
-                                                                    "id": "un24u7aajfw88yxoqdkl",
-                                                                    "title": "browserContext.newPage",
-                                                                    "type": "step",
-                                                                    "stepType": "pw:api",
-                                                                    "duration": 1047,
-                                                                    "location": ""
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "r7b5drqx5iz1pfkjrg02",
-                                                            "title": "page.goto(/)",
-                                                            "type": "step",
-                                                            "stepType": "pw:api",
-                                                            "duration": 1137,
-                                                            "location": "tests/navigationUi.spec.ts:10:24"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "icf4o0cyjh23t78xhjk6",
-                                            "title": "locator.getByRole('link', { name: 'Search', exact: true }).getAttribute",
+                                            "id": "c0auu4imoam6ppwupj5w",
+                                            "title": "locator.hover(tbody > tr >> nth=0)",
                                             "type": "step",
                                             "stepType": "pw:api",
-                                            "duration": 55,
-                                            "location": "tests/navigationUi.spec.ts:15:49"
+                                            "duration": 60,
+                                            "location": "tests/search.func.spec.ts:61:36"
                                         },
                                         {
-                                            "id": "dhhl0tkxdwrb1l2pfcqo",
-                                            "title": "expect.toBeAttached",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 22,
-                                            "location": "tests/navigationUi.spec.ts:17:31"
-                                        },
-                                        {
-                                            "id": "pgbkb0vassahn2rif4x7",
-                                            "title": "expect.toHaveCount",
-                                            "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 11,
-                                            "location": "tests/navigationUi.spec.ts:18:31"
-                                        },
-                                        {
-                                            "id": "rxdfdxgg9ylu5gk59bjd",
+                                            "id": "v59o671e8c9bfisxh9cz",
                                             "title": "expect.toBeVisible",
                                             "type": "step",
                                             "stepType": "expect",
-                                            "duration": 16,
-                                            "location": "tests/navigationUi.spec.ts:19:31"
+                                            "duration": 10,
+                                            "location": "tests/search.func.spec.ts:63:44"
                                         },
                                         {
-                                            "id": "u23utk22ncximhjsxx7g",
-                                            "title": "expect.toBeEnabled",
+                                            "id": "xnsnfit6mfk87bkcxwe6",
+                                            "title": "locator.innerText(tbody > tr >> nth=0)",
                                             "type": "step",
-                                            "stepType": "expect",
-                                            "duration": 14,
-                                            "location": "tests/navigationUi.spec.ts:20:31"
+                                            "stepType": "pw:api",
+                                            "duration": 7,
+                                            "location": "tests/search.func.spec.ts:65:59"
                                         },
                                         {
-                                            "id": "05j58zgmamd5yqvn2a87",
+                                            "id": "jzeanxd57hj6sdti2mxp",
                                             "title": "expect.toStrictEqual",
                                             "type": "step",
                                             "stepType": "expect",
-                                            "duration": 1,
-                                            "location": "tests/navigationUi.spec.ts:21:39"
+                                            "duration": 0,
+                                            "location": "tests/search.func.spec.ts:67:39"
                                         },
                                         {
-                                            "id": "a51pvwdmgioh53qgfjqc",
+                                            "id": "7zbfwhjvljbk7daq55ta",
+                                            "title": "expect.toStrictEqual",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 0,
+                                            "location": "tests/search.func.spec.ts:68:39"
+                                        },
+                                        {
+                                            "id": "7z2nkdfk563b6e99bdni",
+                                            "title": "expect.toStrictEqual",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 0,
+                                            "location": "tests/search.func.spec.ts:69:39"
+                                        },
+                                        {
+                                            "id": "00tqe8wtlx7jpe2rx6jd",
                                             "title": "After Hooks",
                                             "type": "step",
                                             "stepType": "hook",
-                                            "duration": 277,
+                                            "duration": 214,
                                             "location": "",
                                             "subs": [
                                                 {
-                                                    "id": "df5j3273f28tyzlztsoh",
+                                                    "id": "wecc4xnjn7mbkhfc53we",
+                                                    "title": "Close API request context",
+                                                    "type": "step",
+                                                    "stepType": "hook",
+                                                    "duration": 46,
+                                                    "location": "tests/search.func.spec.ts:72:14",
+                                                    "subs": [
+                                                        {
+                                                            "id": "s5oh7c7vsh23nf2a5wht",
+                                                            "title": "apiRequestContext.dispose",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 2,
+                                                            "location": "tests/search.func.spec.ts:73:13"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "m4hy1vzd7s71aljgldn7",
                                                     "title": "fixture: page",
                                                     "type": "step",
                                                     "stepType": "fixture",
@@ -1690,7 +494,7 @@
                                                     "location": ""
                                                 },
                                                 {
-                                                    "id": "nub2gbdznybpg4vgm8zs",
+                                                    "id": "hchu1ohbhdw3xik7yzi8",
                                                     "title": "fixture: context",
                                                     "type": "step",
                                                     "stepType": "fixture",
@@ -1702,124 +506,10 @@
                                     ]
                                 }
                             ],
-                            "location": "tests/navigationUi.spec.ts:7:10"
+                            "location": "tests/search.func.spec.ts:28:10"
                         }
                     ],
-                    "location": "tests/navigationUi.spec.ts:0:0"
-                },
-                {
-                    "id": "9b2ea2b2941a49a095ed",
-                    "title": "test.spec.ts",
-                    "type": "suite",
-                    "suiteType": "file",
-                    "caseNum": 1,
-                    "subs": [
-                        {
-                            "id": "e905ef93d96eb808427a",
-                            "title": "test 1",
-                            "type": "case",
-                            "caseType": "passed",
-                            "ok": true,
-                            "outcome": "expected",
-                            "expectedStatus": "passed",
-                            "location": "tests/test.spec.ts:4:5",
-                            "timestamps": [
-                                1737975112049,
-                                1737975114561
-                            ],
-                            "duration": 2512,
-                            "tags": [],
-                            "timeout": 60000,
-                            "retry": 0,
-                            "status": "passed",
-                            "stepNum": 9,
-                            "stepFailed": 0,
-                            "stepSubs": true,
-                            "subs": [
-                                {
-                                    "id": "xivmhmhtlgrzhp08eg3a",
-                                    "title": "Before Hooks",
-                                    "type": "step",
-                                    "stepType": "hook",
-                                    "duration": 1084,
-                                    "location": "",
-                                    "subs": [
-                                        {
-                                            "id": "w94ijururf1hy8dgvmsi",
-                                            "title": "fixture: context",
-                                            "type": "step",
-                                            "stepType": "fixture",
-                                            "duration": 8,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "0zcr87mjbge5hfja6xe5",
-                                                    "title": "browser.newContext",
-                                                    "type": "step",
-                                                    "stepType": "pw:api",
-                                                    "duration": 5,
-                                                    "location": ""
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "c8avghy3gkq80k9al65s",
-                                            "title": "fixture: page",
-                                            "type": "step",
-                                            "stepType": "fixture",
-                                            "duration": 1071,
-                                            "location": "",
-                                            "subs": [
-                                                {
-                                                    "id": "nn7zc5kldbalxnfgoxuz",
-                                                    "title": "browserContext.newPage",
-                                                    "type": "step",
-                                                    "stepType": "pw:api",
-                                                    "duration": 1070,
-                                                    "location": ""
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "7l0aossrpiuf3r0qe74x",
-                                    "title": "page.goto(http://localhost:5000)",
-                                    "type": "step",
-                                    "stepType": "pw:api",
-                                    "duration": 1168,
-                                    "location": "tests/test.spec.ts:5:16"
-                                },
-                                {
-                                    "id": "txdyplqrdp6ao69wqfyk",
-                                    "title": "After Hooks",
-                                    "type": "step",
-                                    "stepType": "hook",
-                                    "duration": 252,
-                                    "location": "",
-                                    "subs": [
-                                        {
-                                            "id": "codbcjy738r4eq9kvih6",
-                                            "title": "fixture: page",
-                                            "type": "step",
-                                            "stepType": "fixture",
-                                            "duration": 0,
-                                            "location": ""
-                                        },
-                                        {
-                                            "id": "91w0jebis8pmnigdi18m",
-                                            "title": "fixture: context",
-                                            "type": "step",
-                                            "stepType": "fixture",
-                                            "duration": 0,
-                                            "location": ""
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "location": "tests/test.spec.ts:0:0"
+                    "location": "tests/search.func.spec.ts:0:0"
                 }
             ],
             "metadata": {}
@@ -1845,7 +535,7 @@
     "summary": {
         "tests": {
             "name": "Tests",
-            "value": 9,
+            "value": 1,
             "nav": true,
             "id": "tests"
         },
@@ -1875,7 +565,7 @@
         },
         "passed": {
             "name": "Passed",
-            "value": 9,
+            "value": 1,
             "color": "green",
             "nav": true,
             "id": "passed",
@@ -1883,30 +573,30 @@
         },
         "steps": {
             "name": "Steps",
-            "value": 135,
+            "value": 33,
             "id": "steps"
         },
         "suites": {
             "name": "Suites",
-            "value": 9,
+            "value": 1,
             "id": "suites"
         },
         "projects": {
             "name": "Projects",
             "description": "Suite type is project",
-            "value": 3,
+            "value": 1,
             "id": "projects"
         },
         "files": {
             "name": "Files",
             "description": "Suite type is file",
-            "value": 2,
+            "value": 1,
             "id": "files"
         },
         "describes": {
             "name": "Describes",
             "description": "Suite type is describe",
-            "value": 6,
+            "value": 1,
             "id": "describes"
         },
         "shards": {
@@ -1949,7 +639,7 @@
         "width": 360,
         "height": 150,
         "margin": 10,
-        "svg": "<svg viewBox=\"0 0 360 150\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-failed\"><path d=\"\" fill=\"#d00\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-passed\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 A65,65 0 1 1 75,10 z\" fill=\"green\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 15)\"><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"#d00\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 30)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"orange\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 60)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"gray\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 90)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"green\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">9</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">100.0%</text></g></g></svg>"
+        "svg": "<svg viewBox=\"0 0 360 150\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-failed\"><path d=\"\" fill=\"#d00\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-passed\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 A65,65 0 1 1 75,10 z\" fill=\"green\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 15)\"><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"#d00\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 30)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"orange\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 60)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"gray\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 90)\"><circle cx=\"10\" cy=\"15\" r=\"10\" fill=\"green\" opacity=\"0.8\" /><text x=\"30\" y=\"15\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"15\" alignment-baseline=\"middle\" text-anchor=\"end\">100.0%</text></g></g></svg>"
     },
     "htmlPath": "reports/monocart-report/index.html"
 }
