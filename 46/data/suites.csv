@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Feb 10 09:06:56 GMT 2025","Mon Feb 10 09:06:56 GMT 2025","766","chromium","search.func.test.ts","Should Search Users By Search Criteria","","","Search User With Unique First Name: Run_01",""
+"passed","Mon Feb 10 09:06:58 GMT 2025","Mon Feb 10 09:07:02 GMT 2025","3444","firefox","search.func.test.ts","Should Search Users By Search Criteria","","","Search User With Unique First Name: Run_01",""
+"passed","Mon Feb 10 09:06:57 GMT 2025","Mon Feb 10 09:06:57 GMT 2025","593","chromium","search.func.test.ts","Should Search Users By Search Criteria","","","Search User With Unique First Name: Run_02",""
+"passed","Mon Feb 10 09:07:03 GMT 2025","Mon Feb 10 09:07:04 GMT 2025","846","firefox","search.func.test.ts","Should Search Users By Search Criteria","","","Search User With Unique First Name: Run_03",""
+"passed","Mon Feb 10 09:06:57 GMT 2025","Mon Feb 10 09:06:58 GMT 2025","563","chromium","search.func.test.ts","Should Search Users By Search Criteria","","","Search User With Unique First Name: Run_03",""
+"passed","Mon Feb 10 09:07:02 GMT 2025","Mon Feb 10 09:07:03 GMT 2025","886","firefox","search.func.test.ts","Should Search Users By Search Criteria","","","Search User With Unique First Name: Run_02",""
