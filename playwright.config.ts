@@ -77,12 +77,14 @@ export default defineConfig({
       // dependencies: ['Setup'],
     },
 
-    // {
-    //   name: 'firefox',
-    //     testMatch: /.*\.test\.ts/,
-    //   use: { ...devices['Desktop Firefox'] },
-    //   // dependencies: ['Setup'],
-    // },
+    {
+      name: 'firefox',
+        testMatch: /.*\.test\.ts/,
+      use: { ...devices['Desktop Firefox'],
+        // headless: !!process.env.CI,
+      },
+      // dependencies: ['Setup'],
+    },
     //
     // {
     //   name: 'webkit',
