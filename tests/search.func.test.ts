@@ -2,8 +2,8 @@ import {test, expect, request, APIRequestContext} from "@playwright/test";
 import * as preconditions from "../utils/apiUtils";
 import { users } from "@data/usersTestData";
 [
-    // {tcRunNumber: "Run_01" },
-    // {tcRunNumber: "Run_02" },
+    {tcRunNumber: "Run_01" },
+    {tcRunNumber: "Run_02" },
     {tcRunNumber: "Run_03" },
 ].forEach(({tcRunNumber}) => {
     test.describe('Should Search Users By Search Criteria', async() => {
