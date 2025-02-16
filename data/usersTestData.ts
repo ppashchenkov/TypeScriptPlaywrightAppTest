@@ -25,3 +25,5 @@ export const users = {
         age: '55',
     },
 }
+
+export const uniqueFirstNameUser = users.user1;
