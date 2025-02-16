@@ -1,6 +1,9 @@
 import {test, expect, request, APIRequestContext} from "@playwright/test";
 import * as preconditions from "../utils/apiUtils";
-import { users } from "@data/usersTestData";
+import { users, uniqueFirstNameUser } from "@data/usersTestData";
+import {HomePage} from "@pages/home.page";
+import {SearchPage} from "@pages/search.page";
+
 [
     {tcRunNumber: "Run_01" },
     {tcRunNumber: "Run_02" },
@@ -16,38 +19,55 @@ import { users } from "@data/usersTestData";
             await page.goto('/');
         })
 
-        test(`Search User With Unique First Name: ${tcRunNumber}`, async({ page }) => {
-            const searchTab = page.getByRole('link', {name: 'Search', exact: true});
-            const tableRow = page.locator('tbody > tr');
-            const firstNamePlaceHolder = page.getByPlaceholder('Enter first name');
-            const searchButton = page.getByRole('button', {name: 'Search', exact: true});
+        // test(`Search User With Unique First Name: ${tcRunNumber}`, async({ page }) => {
+        //     const searchTab = page.getByRole('link', {name: 'Search', exact: true});
+        //     const tableRow = page.locator('tbody > tr');
+        //     const firstNamePlaceHolder = page.getByPlaceholder('Enter first name');
+        //     const searchButton = page.getByRole('button', {name: 'Search', exact: true});
+        //
+        //     await expect(searchTab).toBeEnabled();
+        //
+        //     await searchTab.hover();
+        //     await searchTab.click();
+        //
+        //     await expect(tableRow.first()).toBeAttached();
+        //     await expect(searchButton).toBeDisabled();
+        //     await expect(firstNamePlaceHolder).toBeVisible();
+        //
+        //     await firstNamePlaceHolder.fill(users.user1.firstName);
+        //
+        //     await expect(searchButton).toBeEnabled()
+        //
+        //     await searchButton.click();
+        //
+        //     await expect(tableRow).toHaveCount(1);
+        //
+        //     await tableRow.first().hover();
+        //
+        //     await expect(tableRow.first()).toBeVisible();
+        //
+        //     const actualUserInfo = await tableRow.first().innerText().then(text => text.split("\t"));
+        //
+        //     expect(actualUserInfo[1]).toStrictEqual(users.user1.firstName);
+        //     expect(actualUserInfo[2]).toStrictEqual(users.user1.lastName);
+        //     expect(actualUserInfo[3]).toStrictEqual(users.user1.age);
+        // })
 
-            await expect(searchTab).toBeEnabled();
+        test(`Search User With Unique First Name - POM: ${tcRunNumber}`, async({ page }) => {
 
-            await searchTab.hover();
-            await searchTab.click();
+            await new HomePage(page).tab.clickSearchTab();
+            const searchPage = new SearchPage(page);
+            await searchPage.form
+                .inputFirstName(uniqueFirstNameUser.firstName);
+            await searchPage.form.clickSearchButton();
 
-            await expect(tableRow.first()).toBeAttached();
-            await expect(searchButton).toBeDisabled();
-            await expect(firstNamePlaceHolder).toBeVisible();
+            await expect(searchPage.table.tableRow).toHaveCount(1);
 
-            await firstNamePlaceHolder.fill(users.user1.firstName);
+            const actualUserInfo = await searchPage.table.getFirstRowResultInfo();
 
-            await expect(searchButton).toBeEnabled()
-
-            await searchButton.click();
-
-            await expect(tableRow).toHaveCount(1);
-
-            await tableRow.first().hover();
-
-            await expect(tableRow.first()).toBeVisible();
-
-            const actualUserInfo = await tableRow.first().innerText().then(text => text.split("\t"));
-
-            expect(actualUserInfo[1]).toStrictEqual(users.user1.firstName);
-            expect(actualUserInfo[2]).toStrictEqual(users.user1.lastName);
-            expect(actualUserInfo[3]).toStrictEqual(users.user1.age);
+            expect(actualUserInfo[1]).toStrictEqual(uniqueFirstNameUser.firstName);
+            expect(actualUserInfo[2]).toStrictEqual(uniqueFirstNameUser.lastName);
+            expect(actualUserInfo[3]).toStrictEqual(uniqueFirstNameUser.age);
         })
 
         test.afterEach('Close API request context', async({ page }) => {
