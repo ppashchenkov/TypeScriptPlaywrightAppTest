@@ -1,6 +1,6 @@
 import {test, expect, request, APIRequestContext} from "@playwright/test";
 import * as preconditions from "../utils/apiUtils";
-import { users } from "@data/usersTestData";
+import {uniqueFirstNameUser, users} from "@data/usersTestData";
 import { data } from "@data/searchFuncTestData";
 import {SearchPage} from "@pages/search.page";
 import {HomePage} from "@pages/home.page";
@@ -25,7 +25,24 @@ import {HomePage} from "@pages/home.page";
             await page.goto('/');
         })
 
-        test(`Search User: ${tcName}`, async ({page}) => {
+        test(`Search User POM: ${tcName}`, async ({page}) => {
+
+            await new HomePage(page).tab.clickSearchTab();
+            const searchPage = new SearchPage(page);
+            await searchPage.form
+                .inputFirstName(uniqueFirstNameUser.firstName);
+            await searchPage.form.clickSearchButton();
+
+            await expect(searchPage.table.tableRow).toHaveCount(1);
+
+            const actualUserInfo = await searchPage.table.getFirstRowResultInfo();
+
+            expect(actualUserInfo[1]).toStrictEqual(uniqueFirstNameUser.firstName);
+            expect(actualUserInfo[2]).toStrictEqual(uniqueFirstNameUser.lastName);
+            expect(actualUserInfo[3]).toStrictEqual(uniqueFirstNameUser.age);
+        })
+
+        test(`Search User by searchCriteria: ${tcName}`, async ({page}) => {
 
             await new HomePage(page).tab.clickSearchTab();
             const searchPage = new SearchPage(page);
@@ -44,7 +61,7 @@ import {HomePage} from "@pages/home.page";
             }
         })
 
-        // test(`Search User: ${tcName}`, async ({page}) => {
+        // test(`Search User by searchCriteria: ${tcName}`, async ({page}) => {
         //     const searchTab = page.getByRole('link', {name: 'Search', exact: true});
         //     const tableRow = page.locator('tbody > tr');
         //     const firstNamePlaceHolder = page.getByPlaceholder('Enter first name');
@@ -100,23 +117,6 @@ import {HomePage} from "@pages/home.page";
         //         expect(actualLastUserName).toEqual(expectedUsers[i].lastName)
         //         expect(actualAge).toEqual(expectedUsers[i].age)
         //     }
-        // })
-
-        // test(`Search User POM: ${tcName}`, async ({page}) => {
-        //
-        //     await new HomePage(page).tab.clickSearchTab();
-        //     const searchPage = new SearchPage(page);
-        //     await searchPage.form
-        //         .inputFirstName(uniqueFirstNameUser.firstName);
-        //     await searchPage.form.clickSearchButton();
-        //
-        //     await expect(searchPage.table.tableRow).toHaveCount(1);
-        //
-        //     const actualUserInfo = await searchPage.table.getFirstRowResultInfo();
-        //
-        //     expect(actualUserInfo[1]).toStrictEqual(uniqueFirstNameUser.firstName);
-        //     expect(actualUserInfo[2]).toStrictEqual(uniqueFirstNameUser.lastName);
-        //     expect(actualUserInfo[3]).toStrictEqual(uniqueFirstNameUser.age);
         // })
 
         test.afterEach('Close API request context', async ({page}) => {

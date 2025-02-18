@@ -37,4 +37,13 @@ export class Form {
             this.searchButton.click(),
         ])
     }
+
+    async inputFirstName(firstName: string): Promise<void> {
+        await Promise.all([
+            new Table(this.page).tableRow.first().waitFor({state: "attached"}),
+            this.searchButton.isDisabled(),
+            this.firstNamePlaceHolder.waitFor({state: "visible"}),
+            this.firstNamePlaceHolder.fill(firstName),
+        ])
+    }
 }
