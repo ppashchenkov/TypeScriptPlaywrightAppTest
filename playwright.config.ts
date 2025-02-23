@@ -74,7 +74,7 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'],
       // headless: !!process.env.CI,
         },
-      // dependencies: ['Setup'],
+      dependencies: ['Setup'],
     },
 
     {
