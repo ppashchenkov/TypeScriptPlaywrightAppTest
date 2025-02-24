@@ -4,9 +4,10 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "npx playwright test",
+    "test": "./run_tests.sh",
     "report:html": "npx playwright show-report reports/html-report",
-    "report:allure": "allure serve reports/allure-report",
+    "report:allure": "allure generate --clean --output reports/allure-report",
+    "show-allure": "npx allure open reports/allure-report",
     "build": "tsc"
   },
   "devDependencies": {

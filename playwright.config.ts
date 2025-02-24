@@ -60,7 +60,7 @@ export default defineConfig({
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',
     ignoreHTTPSErrors: true,
-     testIdAttribute: 'id',
+    testIdAttribute: 'id',
   },
   projects: [
     {
