@@ -47,24 +47,23 @@ test.describe('Verify the server is responsive', async() => {
         })
     })
 
-    // test('@allure.id:SRV-LOAD-TC02 Ensure the homepage loads correctly.', async () => {
-    //     {
-    //         await allure.description('Ensure that the homepage loads correctly by verifying URL and "/api/users/" response.');
-    //     }
-    //
-    //     await step('1. Navigate to the homepage and wait for a successful "/api/users/" response.', async () => {
-    //         await Promise.all([
-    //             page.waitForResponse(response =>
-    //                 response.url().endsWith('/api/users/') && response.status() === 200
-    //             ),
-    //             page.goto('/'),
-    //         ]);
-    //     });
-    //
-    //     await step(`VERIFY that the homepage URL matches "${process.env.URL}".`, async () => {
-    //         expect(page.url()).toEqual(`${process.env.URL}/`);
-    //     })
-    // })
+    test('@allure.id:SRV-LOAD-TC02 Ensure the homepage loads correctly.', async () => {
+        {
+            await allure.description('Ensure that the homepage loads correctly by verifying URL and "/api/users/" response.');
+        }
+
+        await step('1. Navigate to the homepage and wait for a successful "/api/users/" response.', async () => {
+            await Promise.all([
+                page.waitForResponse(response =>
+                    response.url().endsWith('/api/users/') && response.status() === 200
+                ),
+                page.goto('/api/users/'),
+            ]);
+        });
+        await step(`VERIFY that the homepage URL matches "${process.env.BASE_URL}".`, async () => {
+            expect(page.url()).toEqual(`${process.env.BASE_URL}/api/users/`);
+        })
+    })
 
     test.afterEach('Close Context and Page', async() => {
         await step('Close Page', async () => {
