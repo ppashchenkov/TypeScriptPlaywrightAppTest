@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"9a2534d2799691712ac674c80f99f4d9","name":"Setup","statistic":{"failed":1,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":2}},{"uid":"ed39c131db56604842b18253a0c76267","name":"firefox","statistic":{"failed":0,"broken":0,"skipped":0,"passed":14,"unknown":0,"total":14}}]}
