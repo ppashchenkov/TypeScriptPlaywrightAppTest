@@ -61,64 +61,6 @@ import {HomePage} from "@pages/home.page";
             }
         })
 
-        // test(`Search User by searchCriteria: ${tcName}`, async ({page}) => {
-        //     const searchTab = page.getByRole('link', {name: 'Search', exact: true});
-        //     const tableRow = page.locator('tbody > tr');
-        //     const firstNamePlaceHolder = page.getByPlaceholder('Enter first name');
-        //     const lastNamePlaceHolder = page.getByPlaceholder('Enter last name');
-        //     const agePlaceHolder = page.getByPlaceholder('Enter age ( 1 - 150 )');
-        //     const userIdPlaceHolder = page.getByPlaceholder('Enter user ID...');
-        //     const searchButton = page.getByRole('button', {name: 'Search', exact: true});
-        //
-        //     await expect(searchTab).toBeEnabled();
-        //
-        //     await searchTab.hover();
-        //     await searchTab.click();
-        //
-        //     await expect(tableRow.first()).toBeAttached();
-        //     await expect(searchButton).toBeDisabled();
-        //     await expect(userIdPlaceHolder).toBeVisible();
-        //     await expect(firstNamePlaceHolder).toBeVisible();
-        //     await expect(lastNamePlaceHolder).toBeVisible();
-        //     await expect(agePlaceHolder).toBeVisible();
-        //
-        //     await userIdPlaceHolder.fill(searchCriteria[0]);
-        //     await firstNamePlaceHolder.fill(searchCriteria[1]);
-        //     await lastNamePlaceHolder.fill(searchCriteria[2]);
-        //     await agePlaceHolder.fill(searchCriteria[3]);
-        //
-        //     await expect(searchButton).toBeEnabled()
-        //
-        //     await searchButton.click();
-        //
-        //     await expect(tableRow).toHaveCount(expectedCount);
-        //
-        //     await tableRow.first().hover();
-        //
-        //     await expect(tableRow.first()).toBeVisible();
-        //
-        //     const actualListSearchedUsers = await page.locator('tbody>tr').all()
-        //     const actualCountSearchedUsers = actualListSearchedUsers.length
-        //
-        //     for (let i = 0; i < actualCountSearchedUsers; i++) {
-        //         await page.waitForLoadState('domcontentloaded');
-        //         const actualFirstUserName = await page.locator('tbody>tr')
-        //             .nth(i).locator('td')
-        //             .first().innerText()
-        //         const actualLastUserName = await page.locator('tbody>tr')
-        //             .nth(i).locator('td')
-        //             .nth(1).innerText()
-        //         const actualAge = await page.locator('tbody>tr')
-        //             .nth(i).locator('td')
-        //             .nth(2).innerText()
-        //         await page.waitForLoadState('networkidle')
-        //
-        //         expect(actualFirstUserName).toEqual(expectedUsers[i].firstName)
-        //         expect(actualLastUserName).toEqual(expectedUsers[i].lastName)
-        //         expect(actualAge).toEqual(expectedUsers[i].age)
-        //     }
-        // })
-
         test.afterEach('Close API request context', async ({page}) => {
             await apiRequest.dispose();
         })
