@@ -7,7 +7,7 @@
     "test": "./run_tests.sh",
     "report:html": "npx playwright show-report reports/html-report",
     "report:allure": "allure generate --clean --output reports/allure-report",
-    "show-allure": "npx allure open reports/allure-report",
+    "allure": "npx allure open reports/allure-report",
     "build": "tsc"
   },
   "devDependencies": {
