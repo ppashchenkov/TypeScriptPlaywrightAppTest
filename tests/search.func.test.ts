@@ -1,9 +1,9 @@
-import {test, expect, request, APIRequestContext} from "@playwright/test";
-import * as preconditions from "../utils/apiUtils";
+import {test, expect, allureMeta} from "@base/base.test";
 import {uniqueFirstNameUser, users} from "@data/usersTestData";
 import { data } from "@data/searchFuncTestData";
 import {SearchPage} from "@pages/search.page";
 import {HomePage} from "@pages/home.page";
+import {epic, story, tags, Severity, description} from "allure-js-commons";
 
 
 [
@@ -16,17 +16,23 @@ import {HomePage} from "@pages/home.page";
 
 ].forEach(({tcName, searchCriteria, expectedCount, expectedUsers}) => {
     test.describe('Should Search Users By Search Criteria', async () => {
-        let apiRequest: APIRequestContext;
 
-        test.beforeEach('Create API Request Context, Create Preconditions', async ({page}) => {
-            apiRequest = await request.newContext();
-            await preconditions.deleteUsers(apiRequest);
-            await preconditions.createUsers(apiRequest, users)
-            await page.goto('/');
+
+        test.beforeEach('Create API Request Context, Create Preconditions', async () => {
+            await allureMeta(
+                epic('FUN: Search Users By Search Criteria'),
+                story('FUN-SEARCH: Search for a user/users using one or multiple criteries.'),
+                tags('FUN', 'SEARCH'),
+                Severity.NORMAL
+            );
         })
 
-        test(`Search User POM: ${tcName}`, async ({page}) => {
-
+        test(`Search User POM: ${tcName}`, async ({createDB, page}) => {
+            await allureMeta(
+                description('This test verifies that the "Search" tab is accessible, allows user input, ' +
+                    'enables the search button upon valid input, and correctly displays the searched user’s details ' +
+                    'in the results table.')
+            )
             await new HomePage(page).tab.clickSearchTab();
             const searchPage = new SearchPage(page);
             await searchPage.form
@@ -42,7 +48,7 @@ import {HomePage} from "@pages/home.page";
             expect(actualUserInfo[3]).toStrictEqual(uniqueFirstNameUser.age);
         })
 
-        test(`Search User by searchCriteria: ${tcName}`, async ({page}) => {
+        test(`Search User by searchCriteria: ${tcName}`, async ({createDB, page}) => {
 
             await new HomePage(page).tab.clickSearchTab();
             const searchPage = new SearchPage(page);
@@ -59,10 +65,6 @@ import {HomePage} from "@pages/home.page";
                 expect(actualUserData[1]).toEqual(expectedUsers[i].lastName)
                 expect(actualUserData[2]).toEqual(expectedUsers[i].age)
             }
-        })
-
-        test.afterEach('Close API request context', async ({page}) => {
-            await apiRequest.dispose();
         })
     })
 })
