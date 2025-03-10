@@ -3,6 +3,8 @@ import {Table} from "@components/table";
 
 export class Form {
     private readonly page: Page;
+    private readonly formFields: Locator;
+    private readonly labelsTexts: Locator;
     private readonly searchButton: Locator;
     private readonly userIdPlaceHolder: Locator;
     private readonly firstNamePlaceHolder: Locator;
@@ -11,11 +13,21 @@ export class Form {
 
     constructor(page: Page) {
         this.page = page;
+        this.formFields = this.page.locator('.form-group');
+        this.labelsTexts = this.formFields.locator('label');
         this.searchButton = this.page.getByRole('button', {name: 'Search', exact: true});
         this.userIdPlaceHolder = this.page.getByPlaceholder('Enter user ID...');
         this.firstNamePlaceHolder = this.page.getByPlaceholder('Enter first name');
         this.lastNamePlaceHolder = this.page.getByPlaceholder('Enter last name');
         this.agePlaceHolder = this.page.getByPlaceholder('Enter age ( 1 - 150 )');
+    }
+
+    async getFormFieldsLocator(): Promise<Locator> {
+        return this.formFields;
+    }
+
+    async getLabelsText(): Promise<String[]> {
+        return this.labelsTexts.allInnerTexts();
     }
 
     async inputUserData(searchCriteria: string[]): Promise<void> {
