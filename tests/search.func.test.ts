@@ -1,9 +1,7 @@
-import {test, expect, request, APIRequestContext} from "@playwright/test";
-import * as preconditions from "../utils/apiUtils";
+import {test, expect, allureMeta} from "@base/base.test";
 import {uniqueFirstNameUser, users} from "@data/usersTestData";
 import { data } from "@data/searchFuncTestData";
-import {SearchPage} from "@pages/search.page";
-import {HomePage} from "@pages/home.page";
+import {epic, story, tags, Severity, description, step} from "allure-js-commons";
 
 
 [
@@ -16,53 +14,83 @@ import {HomePage} from "@pages/home.page";
 
 ].forEach(({tcName, searchCriteria, expectedCount, expectedUsers}) => {
     test.describe('Should Search Users By Search Criteria', async () => {
-        let apiRequest: APIRequestContext;
 
-        test.beforeEach('Create API Request Context, Create Preconditions', async ({page}) => {
-            apiRequest = await request.newContext();
-            await preconditions.deleteUsers(apiRequest);
-            await preconditions.createUsers(apiRequest, users)
-            await page.goto('/');
+        test.beforeEach('Create API Request Context, Create Preconditions', async () => {
+            await allureMeta(
+                epic('FUN: Search Users By Search Criteria'),
+                story('FUN-SEARCH: Search for a user/users using one or multiple criteries.'),
+                tags('FUN', 'SEARCH'),
+                Severity.NORMAL
+            );
         })
 
-        test(`Search User POM: ${tcName}`, async ({page}) => {
+        test(`Search User POM: ${tcName}`, async ({createDB, homePage, searchPage}) => {
+            await allureMeta(
+                description('This test verifies that the "Search" tab is accessible, allows user input, ' +
+                    'enables the search button upon valid input, and correctly displays the searched user’s details ' +
+                    'in the results table.')
+            )
+            let actualUserInfo: string[] = [];
+            await step('1. Click "Search" tab on the Home page.', async () => {
+                await homePage.tab.clickSearchTab();
+            });
+            await step('2. Fill firstName info', async () => {
+                await searchPage.form
+                    .inputFirstName(uniqueFirstNameUser.firstName);
+            });
+            await step('2. Click "search" button', async () => {
+                await searchPage.form.clickSearchButton();
+            });
 
-            await new HomePage(page).tab.clickSearchTab();
-            const searchPage = new SearchPage(page);
-            await searchPage.form
-                .inputFirstName(uniqueFirstNameUser.firstName);
-            await searchPage.form.clickSearchButton();
+            await step('3. Expect one found user', async () => {
+                await expect(searchPage.table.tableRow).toHaveCount(1);
+            });
+            await step('2. Collect actual user info', async () => {
+                actualUserInfo = await searchPage.table.getFirstRowResultInfo();
+            });
 
-            await expect(searchPage.table.tableRow).toHaveCount(1);
-
-            const actualUserInfo = await searchPage.table.getFirstRowResultInfo();
-
-            expect(actualUserInfo[1]).toStrictEqual(uniqueFirstNameUser.firstName);
-            expect(actualUserInfo[2]).toStrictEqual(uniqueFirstNameUser.lastName);
-            expect(actualUserInfo[3]).toStrictEqual(uniqueFirstNameUser.age);
+            await step('Expect firstName founded user', async () => {
+                expect(actualUserInfo[1]).toStrictEqual(uniqueFirstNameUser.firstName);
+            });
+            await step('Expect lastName founded user', async () => {
+                expect(actualUserInfo[2]).toStrictEqual(uniqueFirstNameUser.lastName);
+            });
+            await step('Expect age founded user', async () => {
+                expect(actualUserInfo[3]).toStrictEqual(uniqueFirstNameUser.age);
+            });
         })
 
-        test(`Search User by searchCriteria: ${tcName}`, async ({page}) => {
-
-            await new HomePage(page).tab.clickSearchTab();
-            const searchPage = new SearchPage(page);
-            await searchPage.form.inputUserData(searchCriteria);
-            await searchPage.form.clickSearchButton();
-
-            await expect(searchPage.table.tableRow).toHaveCount(expectedCount);
-
-            await searchPage.table.hoverToFirstRow();
+        test(`Search User by searchCriteria: ${tcName}`, async ({createDB, homePage, searchPage}) => {
+            let actualUserData: string[] = [];
+            await step('1. Click "Search" tab on the Home page.', async () => {
+                await homePage.tab.clickSearchTab();
+            });
+            await step('2. Fill user\'s info for search', async () => {
+                await searchPage.form.inputUserData(searchCriteria);
+            });
+            await step('2. Click "search" button', async () => {
+                await searchPage.form.clickSearchButton();
+            });
+            await step('3. Expect a lot founded users', async () => {
+                await expect(searchPage.table.tableRow).toHaveCount(expectedCount);
+            });
+            await step('2. Hover mouse on first founded user', async () => {
+                await searchPage.table.hoverToFirstRow();
+            });
             for (let i = 0; i < expectedCount; i++) {
-                const actualUserData = await searchPage.table.getActualUserData(i);
-
-                expect(actualUserData[0]).toEqual(expectedUsers[i].firstName)
-                expect(actualUserData[1]).toEqual(expectedUsers[i].lastName)
-                expect(actualUserData[2]).toEqual(expectedUsers[i].age)
+                await step('2. Collect actual user info', async () => {
+                    actualUserData = await searchPage.table.getActualUserData(i);
+                });
+                await step('Expect firstName founded user', async () => {
+                    expect(actualUserData[0]).toEqual(expectedUsers[i].firstName)
+                });
+                await step('Expect lastName founded user', async () => {
+                    expect(actualUserData[1]).toEqual(expectedUsers[i].lastName)
+                });
+                await step('Expect age founded user', async () => {
+                    expect(actualUserData[2]).toEqual(expectedUsers[i].age)
+                });
             }
-        })
-
-        test.afterEach('Close API request context', async ({page}) => {
-            await apiRequest.dispose();
         })
     })
 })
