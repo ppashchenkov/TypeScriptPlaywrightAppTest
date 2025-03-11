@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Sun Feb 09 18:11:40 GMT 2025","Sun Feb 09 18:11:40 GMT 2025","341","chromium","search.func.test.ts","Should Search Users By Search Criteria","","","Search User With Unique First Name: Run_02",""
-"failed","Sun Feb 09 18:11:42 GMT 2025","Sun Feb 09 18:11:43 GMT 2025","209","chromium","search.func.test.ts","Should Search Users By Search Criteria","","","Search User With Unique First Name: Run_03",""
-"failed","Sun Feb 09 18:11:37 GMT 2025","Sun Feb 09 18:11:37 GMT 2025","209","chromium","search.func.test.ts","Should Search Users By Search Criteria","","","Search User With Unique First Name: Run_01",""
