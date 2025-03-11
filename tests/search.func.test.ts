@@ -3,7 +3,6 @@ import {uniqueFirstNameUser, users} from "@data/usersTestData";
 import { data } from "@data/searchFuncTestData";
 import {epic, story, tags, Severity, description, step} from "allure-js-commons";
 
-
 [
     {tcName: data._1.tcName, searchCriteria: data._1.searchCriteria, expectedCount: data._1.expectedCount, expectedUsers: data._1.expectedUsers},
     {tcName: data._2.tcName, searchCriteria: data._2.searchCriteria, expectedCount: data._2.expectedCount, expectedUsers: data._2.expectedUsers},
