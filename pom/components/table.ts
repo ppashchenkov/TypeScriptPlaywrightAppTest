@@ -4,10 +4,32 @@ export class Table {
 
     private readonly page: Page;
     private readonly _tableRow: Locator;
+    private readonly usersLocator: Locator;
 
     constructor(page: Page) {
         this.page = page;
         this._tableRow = this.page.locator('tbody > tr');
+        this.usersLocator = this.page.locator('tbody > tr');
+    }
+
+    async getUsersAmount() {
+        return await this.usersLocator.count();
+    }
+
+    async getUsersLocator() {
+        return this.usersLocator;
+    }
+
+    async getEditIcon(user: Locator) {
+        return user.locator('td>i>a.bi-pen');
+    }
+
+    async getDeleteIcon(user: Locator) {
+        return user.locator('td>i>a.bi-trash');
+    }
+
+    async getUserLocator(index: number) {
+        return this.usersLocator.nth(index);
     }
 
     get tableRow(): Locator {
@@ -43,5 +65,12 @@ export class Table {
             .nth(2).innerText();
 
         return actualUserData;
+    }
+
+    async getUserInfo(user: Locator) {
+        let updatedUser: string[] = [];
+        updatedUser.push(await user.locator('td').nth(3).innerText());
+
+        return updatedUser;
     }
 }

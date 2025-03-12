@@ -13,7 +13,7 @@
       "@pages/*": ["./pom/pages/*"],
       "@components/*": ["./pom/components/*"],
       "@data/*": ["./data/*"],
-      "@preconditions/*": ["./utils/preconditions/*"]
+      "@preconditions/*": ["./utils/*"]
     }
   }
 }

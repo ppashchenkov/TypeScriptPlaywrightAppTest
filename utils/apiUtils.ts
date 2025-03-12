@@ -85,3 +85,7 @@ export async function createUsers(request: APIRequestContext, data: any) {
         )
     }
 }
+
+export function getRandomIndex(usersAmount: number) {
+    return Math.floor(Math.random() * usersAmount);
+}
