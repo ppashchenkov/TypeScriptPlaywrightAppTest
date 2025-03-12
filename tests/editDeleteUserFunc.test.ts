@@ -1,6 +1,9 @@
 import {test, expect, request, APIRequest, APIRequestContext, Locator} from "@playwright/test"
 import  { users } from "@data/usersTestData";
-import {deleteAllUsers} from "../utils/apiUtils";
+import {deleteAllUsers, createUsers, getRandomIndex} from "@preconditions/apiUtils";
+import {Form} from "@components/form";
+import {Buttons} from "@components/buttons";
+import {Table} from "@components/table";
 
 [
     {tcName: '01', editCriteria: [users.user5.firstName, '', '']},
@@ -12,69 +15,46 @@ import {deleteAllUsers} from "../utils/apiUtils";
     {tcName: '07', editCriteria: [users.user5.firstName, users.user5.lastName, users.user5.age]}
 ].forEach(({tcName, editCriteria}) => {
     test.describe('Edit and Delete users functionality', async () => {
-        let apiRequest: APIRequestContext
-        let randomUser: Locator
+        let apiRequest: APIRequestContext;
+        let usersAmount: number;
+        let randomUser: Locator;
+        let form: Form;
+        let table: Table;
+        let buttons: Buttons;
         const usersDB = [users.user1, users.user2, users.user3, users.user4]
         test.beforeEach('Land on Home Page, Create tested users', async ({page}) => {
-            apiRequest = await request.newContext()
-            await deleteAllUsers(apiRequest)
-            await page.goto('/')
-            const firstNameField = page.getByPlaceholder('Enter first name')
-            const lastNameField = page.getByPlaceholder('Enter last name')
-            const ageField = page.getByPlaceholder('Enter age ( 1 - 150 )')
-
-            for (const user of usersDB) {
-                await firstNameField.fill(user.firstName)
-                await lastNameField.fill(user.lastName)
-                await ageField.fill(user.age)
-
-                const addButton = page.getByRole('button', {name: 'Add'})
-                await addButton.click()
-                user.id = await page.locator('tbody>tr').last()
-                    .locator('td').nth(3)
-                    .innerText()
-            }
+            apiRequest = await request.newContext();
+            await deleteAllUsers(apiRequest);
+            await createUsers(apiRequest, usersDB);
             await page.goto('/');
 
-            const usersLocator = page.locator('tbody > tr');
-            const usersAmount = await usersLocator.count();
+            form = new Form(page);
+            table = new Table(page);
+            buttons = new Buttons(page);
+
+            usersAmount = await table.getUsersAmount();
 
             expect(usersAmount).toBeGreaterThanOrEqual(1);
 
-            const randomUserIndex = Math.floor(Math.random() * usersAmount);
-            randomUser = usersLocator.nth(randomUserIndex);
-//            await page.waitForLoadState('domcontentloaded')
+            const randomUserIndex = getRandomIndex(await usersAmount);
+            randomUser = await table.getUserLocator(randomUserIndex);
         })
 
         test(`TC-editUserFun-${tcName}`, async ({page}) => {
-            const editIcon = randomUser.locator('td>i>a.bi-pen')
-            await editIcon.click()
-            // await page.waitForLoadState('networkidle')
+            await (await table.getEditIcon(randomUser)).click();
+            let choicesUser = await form.getUserInfoFromPlaceholders();
+            let updatedUser = [];
+            const fields = await form.getFields();
 
-            let choicesUser = []
-            let updatedUser = []
+            expect(await fields[0].isDisabled()).toBe(true);
+            expect(await fields[0].isEditable()).toBe(false);
 
-            const inputs = await page.locator('#form-edit input').all()
-            for (const input of inputs) {
-                choicesUser.push(await input.getAttribute('placeholder'))
-            }
+            await (await form.getFirstNameField()).fill(editCriteria[0]);
+            await (await form.getLastNameField()).fill(editCriteria[1]);
+            await (await form.getAgeField()).fill(editCriteria[2]);
 
-            expect(await inputs[0].isDisabled()).toBe(true)
-            expect(await inputs[0].isEditable()).toBe(false)
-
-            const firstNameField = await page.getByLabel('First Name')
-            const lastNameField = await page.getByLabel('Last Name')
-            const ageField = await page.getByLabel('Age')
-
-            await firstNameField.fill(editCriteria[0])
-            await lastNameField.fill(editCriteria[1])
-            await ageField.fill(editCriteria[2])
-            const editButton = page.getByRole('button', {name: 'Edit'})
-
-            await editButton.click()
-//            await page.waitForLoadState('networkidle')
-
-            updatedUser.push(await randomUser.locator('td').nth(3).innerText())
+            await (await buttons.getEditButtonNameLocator()).click();
+            updatedUser = await table.getUserInfo(randomUser);
 
             expect(updatedUser[0]).toEqual(choicesUser[0])
             for(let i = 0; i <=2; i++) {
@@ -90,27 +70,19 @@ import {deleteAllUsers} from "../utils/apiUtils";
         })
 
         test(`TC-deleteUserFun-${tcName}`, async ({page}) => {
-            const listUsers = await page.locator('tbody>tr').all()
-            const countUsers = listUsers.length
-
-            const editIcon = randomUser.locator('td>i>a.bi-trash')
-            await editIcon.click()
-//            await page.waitForLoadState('domcontentloaded')
-            const inputs = await page.locator('#form-delete input').all()
+            await (await table.getDeleteIcon(randomUser)).click();
+            const fields = await form.getFields();
 
             for(let i = 0; i <= 3; i++) {
-
-                expect(await inputs[i].isDisabled()).toBe(true)
-                expect(await inputs[i].isEditable()).toBe(false)
+                expect(await fields[i].isDisabled()).toBe(true)
+                expect(await fields[i].isEditable()).toBe(false)
             }
 
-            const deleteButton = page.getByRole('button', {name: 'Delete'})
-            await deleteButton.click()
+            await (await buttons.getDeleteButtonNameLocator()).click();
             await page.waitForLoadState('networkidle')
-            const actualListUsers = await page.locator('tbody>tr').all()
-            const actualCountUsers = actualListUsers.length
+            const actualCountUsers = await table.getUsersAmount();
 
-            expect(actualCountUsers).toEqual(countUsers - 1)
+            expect(actualCountUsers).toEqual(usersAmount - 1)
         })
 
         test.afterEach('Close API request context', async ({page}) => {

@@ -4,11 +4,15 @@ export class Buttons {
     private readonly page: Page;
     private readonly addButtonName: Locator;
     private readonly searchButtonName: Locator;
+    private readonly editButtonName: Locator;
+    private readonly deleteButtonName: Locator;
 
     constructor(page: Page) {
         this.page = page;
         this.addButtonName = page.getByRole('button', {name: 'Add', exact: true});
         this.searchButtonName = page.getByRole('button', {name: 'Search', exact: true});
+        this.editButtonName = page.getByRole('button', {name: 'Edit', exact: true});
+        this.deleteButtonName = page.getByRole('button', {name: 'Delete', exact: true});
     }
 
     async getAddButtonNameLocator(): Promise<Locator> {
@@ -17,5 +21,13 @@ export class Buttons {
 
     async getSearchButtonNameLocator(): Promise<Locator> {
         return this.searchButtonName;
+    }
+
+    async getEditButtonNameLocator(): Promise<Locator> {
+        return this.editButtonName;
+    }
+
+    async getDeleteButtonNameLocator(): Promise<Locator> {
+        return this.deleteButtonName;
     }
 }
