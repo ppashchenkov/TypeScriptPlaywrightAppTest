@@ -1,6 +1,0 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="2.380643">
-<testsuite name="search.func.spec.ts" timestamp="2025-02-09T17:16:13.718Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.429" errors="0">
-<testcase name="Should Search Users By Search Criteria › Search User With Unique First Name: Run_19" classname="search.func.spec.ts" time="1.429">
-</testcase>
-</testsuite>
-</testsuites>
