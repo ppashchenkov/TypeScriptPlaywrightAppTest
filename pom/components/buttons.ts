@@ -27,7 +27,17 @@ export class Buttons {
         return this.editButtonName;
     }
 
+    async editButtonClick(): Promise<void> {
+        await (await this.getEditButtonNameLocator()).click();
+        await this.page.waitForLoadState('load');
+    }
+
     async getDeleteButtonNameLocator(): Promise<Locator> {
         return this.deleteButtonName;
+    }
+
+    async deleteButtonClick(): Promise<void> {
+        await (await this.getDeleteButtonNameLocator()).click();
+        await this.page.waitForLoadState('load');
     }
 }
