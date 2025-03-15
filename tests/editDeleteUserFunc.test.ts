@@ -52,13 +52,12 @@ import {Table} from "@components/table";
             await (await form.getFirstNameField()).fill(editCriteria[0]);
             await (await form.getLastNameField()).fill(editCriteria[1]);
             await (await form.getAgeField()).fill(editCriteria[2]);
-
-            await (await buttons.getEditButtonNameLocator()).click();
+            await buttons.editButtonClick();
             updatedUser = await table.getUserInfo(randomUser);
 
             expect(updatedUser[0]).toEqual(choicesUser[0])
             for(let i = 0; i <=2; i++) {
-                updatedUser.push(await randomUser.locator('td').nth(i).innerText())
+                updatedUser.push(await randomUser.locator('td').nth(i).innerText());
                 if(editCriteria[i]) {
 
                     expect(updatedUser[i + 1]).toEqual(editCriteria[i])
@@ -78,7 +77,7 @@ import {Table} from "@components/table";
                 expect(await fields[i].isEditable()).toBe(false)
             }
 
-            await (await buttons.getDeleteButtonNameLocator()).click();
+            await buttons.deleteButtonClick();
             await page.waitForLoadState('networkidle')
             const actualCountUsers = await table.getUsersAmount();
 
