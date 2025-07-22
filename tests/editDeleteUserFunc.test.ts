@@ -1,4 +1,4 @@
-import {test, expect, request, APIRequest, APIRequestContext, Locator} from "@playwright/test"
+import {test, expect, request, APIRequestContext, Locator} from "@playwright/test"
 import  { users } from "@data/usersTestData";
 import {deleteAllUsers, createUsers, getRandomIndex} from "@preconditions/apiUtils";
 import {Form} from "@components/form";

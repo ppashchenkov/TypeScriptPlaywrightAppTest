@@ -1,5 +1,5 @@
 import {test, expect, allureMeta} from "@base/base.test";
-import {uniqueFirstNameUser, users} from "@data/usersTestData";
+import {uniqueFirstNameUser} from "@data/usersTestData";
 import { data } from "@data/searchFuncTestData";
 import {epic, story, tags, Severity, description, step} from "allure-js-commons";
 
