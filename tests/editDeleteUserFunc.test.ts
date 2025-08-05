@@ -80,7 +80,7 @@ import {Table} from "@components/table";
             }
 
             await buttons.deleteButtonClick();
-            await page.waitForLoadState('networkidle')
+            await page.waitForTimeout(300);
             const actualCountUsers = await table.getUsersAmount();
 
             expect(actualCountUsers).toEqual(usersAmount - 1)
