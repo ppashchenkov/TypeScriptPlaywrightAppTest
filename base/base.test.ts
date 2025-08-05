@@ -17,6 +17,7 @@ export const test = base.extend<MyFixtures>({
         }
         await step('Navigate to the home page.', async  () => {
             await page.goto('/');
+            // await page.waitForLoadState('domcontentloaded');
         })
         await use();
     }, {auto: true}
