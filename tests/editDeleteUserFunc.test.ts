@@ -54,7 +54,8 @@ import {Table} from "@components/table";
             await (await form.getLastNameField()).fill(editCriteria[1]);
             await (await form.getAgeField()).fill(editCriteria[2]);
             await buttons.editButtonClick();
-            await page.waitForLoadState('networkidle');
+            await page.waitForTimeout(200);
+            // await page.waitForLoadState('networkidle');
             updatedUser = await table.getUserInfo(randomUser);
 
             expect(updatedUser[0]).toEqual(choicesUser[0])
