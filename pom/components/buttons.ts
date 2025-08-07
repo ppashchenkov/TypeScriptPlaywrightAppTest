@@ -38,7 +38,6 @@ export class Buttons {
 
     async deleteButtonClick(): Promise<void> {
         await (await this.getDeleteButtonNameLocator()).click();
-        await this.page.waitForTimeout(100);
-        // await this.page.waitForLoadState('load');
+        await this.page.waitForTimeout(200);
     }
 }
