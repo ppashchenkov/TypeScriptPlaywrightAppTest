@@ -54,7 +54,7 @@ import {Table} from "@components/table";
             await (await form.getLastNameField()).fill(editCriteria[1]);
             await (await form.getAgeField()).fill(editCriteria[2]);
             await buttons.editButtonClick();
-            await page.waitForTimeout(200);
+            // await page.waitForTimeout(250);
             // await page.waitForLoadState('networkidle');
             updatedUser = await table.getUserInfo(randomUser);
 
@@ -81,7 +81,7 @@ import {Table} from "@components/table";
             }
 
             await buttons.deleteButtonClick();
-            await page.waitForTimeout(300);
+            // await page.waitForTimeout(300);
             const actualCountUsers = await table.getUsersAmount();
 
             expect(actualCountUsers).toEqual(usersAmount - 1)
