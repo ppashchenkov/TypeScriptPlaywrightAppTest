@@ -39,7 +39,7 @@ import {epic, story, tags, Severity, description, step} from "allure-js-commons"
             });
             await step('2. Click "search" button', async () => {
                 await searchPage.form.clickSearchButton();
-                await page.waitForLoadState('networkidle');
+                // await page.waitForLoadState('networkidle');
             });
 
             await step('3. Expect one found user', async () => {
@@ -70,7 +70,7 @@ import {epic, story, tags, Severity, description, step} from "allure-js-commons"
             });
             await step('2. Click "search" button', async () => {
                 await searchPage.form.clickSearchButton();
-                await page.waitForLoadState('networkidle');
+                // await page.waitForLoadState('networkidle');
             });
             await step('3. Expect a lot founded users', async () => {
                 await expect(searchPage.table.tableRow).toHaveCount(expectedCount);
