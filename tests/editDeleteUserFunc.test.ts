@@ -21,12 +21,13 @@ import {Table} from "@components/table";
         let form: Form;
         let table: Table;
         let buttons: Buttons;
-        const usersDB = [users.user1, users.user2, users.user3, users.user4]
+        const usersDB = [users.user1, users.user2, users.user3, users.user4, users.user5];
         test.beforeEach('Land on Home Page, Create tested users', async ({page}) => {
             apiRequest = await request.newContext();
             await deleteAllUsers(apiRequest);
             await createUsers(apiRequest, usersDB);
             await page.goto('/');
+            await page.waitForTimeout(100);
 
             form = new Form(page);
             table = new Table(page);
@@ -36,7 +37,7 @@ import {Table} from "@components/table";
 
             expect(usersAmount).toBeGreaterThanOrEqual(1);
 
-            const randomUserIndex = getRandomIndex(await usersAmount);
+            const randomUserIndex = getRandomIndex(usersAmount);
             randomUser = await table.getUserLocator(randomUserIndex);
         })
 
@@ -53,6 +54,8 @@ import {Table} from "@components/table";
             await (await form.getLastNameField()).fill(editCriteria[1]);
             await (await form.getAgeField()).fill(editCriteria[2]);
             await buttons.editButtonClick();
+            // await page.waitForTimeout(250);
+            // await page.waitForLoadState('networkidle');
             updatedUser = await table.getUserInfo(randomUser);
 
             expect(updatedUser[0]).toEqual(choicesUser[0])
@@ -78,7 +81,7 @@ import {Table} from "@components/table";
             }
 
             await buttons.deleteButtonClick();
-            await page.waitForLoadState('networkidle')
+            // await page.waitForTimeout(300);
             const actualCountUsers = await table.getUsersAmount();
 
             expect(actualCountUsers).toEqual(usersAmount - 1)

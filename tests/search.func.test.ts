@@ -23,7 +23,7 @@ import {epic, story, tags, Severity, description, step} from "allure-js-commons"
             );
         })
 
-        test(`Search User POM: ${tcName}`, async ({createDB, homePage, searchPage}) => {
+        test(`Search User POM: ${tcName}`, async ({page, createDB, homePage, searchPage}) => {
             await allureMeta(
                 description('This test verifies that the "Search" tab is accessible, allows user input, ' +
                     'enables the search button upon valid input, and correctly displays the searched user’s details ' +
@@ -39,6 +39,7 @@ import {epic, story, tags, Severity, description, step} from "allure-js-commons"
             });
             await step('2. Click "search" button', async () => {
                 await searchPage.form.clickSearchButton();
+                // await page.waitForLoadState('networkidle');
             });
 
             await step('3. Expect one found user', async () => {
@@ -59,7 +60,7 @@ import {epic, story, tags, Severity, description, step} from "allure-js-commons"
             });
         })
 
-        test(`Search User by searchCriteria: ${tcName}`, async ({createDB, homePage, searchPage}) => {
+        test(`Search User by searchCriteria: ${tcName}`, async ({page, createDB, homePage, searchPage}) => {
             let actualUserData: string[] = [];
             await step('1. Click "Search" tab on the Home page.', async () => {
                 await homePage.tab.clickSearchTab();
@@ -69,6 +70,7 @@ import {epic, story, tags, Severity, description, step} from "allure-js-commons"
             });
             await step('2. Click "search" button', async () => {
                 await searchPage.form.clickSearchButton();
+                // await page.waitForLoadState('networkidle');
             });
             await step('3. Expect a lot founded users', async () => {
                 await expect(searchPage.table.tableRow).toHaveCount(expectedCount);
