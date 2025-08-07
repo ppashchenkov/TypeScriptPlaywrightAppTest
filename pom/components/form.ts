@@ -84,6 +84,7 @@ export class Form {
             this.searchButton.isEnabled(),
             this.searchButton.click(),
         ])
+        await this.page.waitForTimeout(100);
     }
 
     async inputFirstName(firstName: string): Promise<void> {
