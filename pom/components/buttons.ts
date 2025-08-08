@@ -29,7 +29,7 @@ export class Buttons {
 
     async editButtonClick(): Promise<void> {
         await (await this.getEditButtonNameLocator()).click();
-        await this.page.waitForTimeout(200);
+        await this.page.waitForTimeout(250);
     }
 
     async getDeleteButtonNameLocator(): Promise<Locator> {

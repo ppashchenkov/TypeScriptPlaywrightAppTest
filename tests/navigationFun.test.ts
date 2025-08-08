@@ -1,4 +1,5 @@
-import {test, expect, Locator} from "@playwright/test"
+import {test, expect} from "@base/base.test";
+import {Locator} from "@playwright/test";
 import {HomePage} from "@pages/home.page";
 import {Tab} from "@components/tab";
 import {Headers} from "@components/headers";
@@ -20,9 +21,9 @@ import {allureMeta} from "@base/base.test";
                 tags('FUN', 'TAB', 'ADD', 'SEARCH'),
                 Severity.NORMAL
             );
-            await step('1. Open Home page.', async () => {
-                await page.goto('/')
-            })
+            // await step('1. Open Home page.', async () => {
+            //     await page.goto('/')
+            // })
             if (tabName === "Add") {
                 await step('2. Click "Add" tab on the Home page.', async () => {
                     await new HomePage(page).tab.clickAddTab();
