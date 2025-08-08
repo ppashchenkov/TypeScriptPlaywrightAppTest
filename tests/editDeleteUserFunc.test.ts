@@ -27,7 +27,7 @@ import {Table} from "@components/table";
             await deleteAllUsers(apiRequest);
             await createUsers(apiRequest, usersDB);
             await page.goto('/');
-            await page.waitForTimeout(100);
+            await page.waitForTimeout(200);
 
             form = new Form(page);
             table = new Table(page);
